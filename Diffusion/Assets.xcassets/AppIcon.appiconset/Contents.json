@@ -8,4 +8,8 @@
     },
     {
       "idiom" : "mac",
-      "scale"
+      "scale" : "1x",
+      "size" : "16x16"
+    },
+    {
+      "idiom" : "mac
