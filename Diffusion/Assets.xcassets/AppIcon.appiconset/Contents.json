@@ -24,4 +24,9 @@
     {
       "idiom" : "mac",
       "scale" : "2x",
-      "size" : "
+      "size" : "32x32"
+    },
+    {
+      "idiom" : "mac",
+      "scale" : "1x",
+ 
