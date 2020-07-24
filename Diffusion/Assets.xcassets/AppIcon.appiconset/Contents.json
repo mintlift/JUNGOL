@@ -37,4 +37,7 @@
       "size" : "128x128"
     },
     {
-      "idi
+      "idiom" : "mac",
+      "scale" : "1x",
+      "size" : "256x256"
+  
