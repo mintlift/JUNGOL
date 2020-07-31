@@ -49,4 +49,7 @@
     },
     {
       "filename" : "256x256@2x.png",
-      "idiom" : "ma
+      "idiom" : "mac",
+      "scale" : "1x",
+      "size" : "512x512"
+    },
