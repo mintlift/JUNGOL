@@ -7,4 +7,10 @@
     {
       "filename" : "labrador.png",
       "idiom" : "universal",
-      "scale" : "2x
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ]
