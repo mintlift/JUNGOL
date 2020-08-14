@@ -1,4 +1,8 @@
 {
   "images" : [
     {
-      "idiom
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "labr
