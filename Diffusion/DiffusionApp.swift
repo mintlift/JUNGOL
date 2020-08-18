@@ -17,3 +17,4 @@ struct DiffusionApp: App {
     }
 }
 
+let runningOnMac = ProcessInfo.processInfo.isMacCatalystA
