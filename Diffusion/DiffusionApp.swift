@@ -6,4 +6,9 @@
 //  See LICENSE at https://github.com/huggingface/swift-coreml-diffusers/LICENSE
 //
 
-import
+import SwiftUI
+
+@main
+struct DiffusionApp: App {
+    var body: some Scene {
+ 
