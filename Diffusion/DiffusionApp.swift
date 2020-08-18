@@ -11,4 +11,9 @@ import SwiftUI
 @main
 struct DiffusionApp: App {
     var body: some Scene {
- 
+        WindowGroup {
+            LoadingView()
+        }
+    }
+}
+
