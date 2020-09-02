@@ -64,3 +64,37 @@ class Downloader: NSObject, ObservableObject {
         default:                  throw("Should never happen, lol")
         }
     }
+    
+    func cancel() {
+        urlSession?.invalidateAndCancel()
+    }
+}
+
+extension Downloader: URLSessionDelegate, URLSessionDownloadDelegate {
+    func urlSession(_: URLSession, downloadTask: URLSessionDownloadTask, didWriteData _: Int64, totalBytesWritten _: Int64, totalBytesExpectedToWrite _: Int64) {
+        downloadState.value = .downloading(downloadTask.progress.fractionCompleted)
+    }
+
+    func urlSession(_: URLSession, downloadTask _: URLSessionDownloadTask, didFinishDownloadingTo location: URL) {
+        guard let path = Path(url: location) else {
+            downloadState.value = .failed("Invalid download location received: \(location)")
+            return
+        }
+        guard let toPath = Path(url: destination) else {
+            downloadState.value = .failed("Invalid destination: \(destination)")
+            return
+        }
+        do {
+            try path.move(to: toPath, overwrite: true)
+            downloadState.value = .completed(destination)
+        } catch {
+            downloadState.value = .failed(error)
+        }
+    }
+
+    func urlSession(_: URLSession, task: URLSessionTask, didCompleteWithError error: Error?) {
+        if let error = error {
+            downloadState.value = .failed(error)
+        }
+    }
+}
