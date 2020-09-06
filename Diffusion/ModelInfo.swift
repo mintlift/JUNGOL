@@ -14,4 +14,8 @@ enum AttentionVariant: String {
 }
 
 extension AttentionVariant {
-    var defaultComputeUnits: MLComputeUnits { self == .original 
+    var defaultComputeUnits: MLComputeUnits { self == .original ? .cpuAndGPU : .cpuAndNeuralEngine }
+}
+
+struct ModelInfo {
+    /// H
