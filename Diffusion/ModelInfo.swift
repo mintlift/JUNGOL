@@ -18,4 +18,4 @@ extension AttentionVariant {
 }
 
 struct ModelInfo {
-    /// H
+    /// Hugging Face model Id that contains .zip archives with co
