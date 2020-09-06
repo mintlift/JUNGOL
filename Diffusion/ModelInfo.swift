@@ -13,4 +13,5 @@ enum AttentionVariant: String {
     case splitEinsum
 }
 
-extension AttentionVariant
+extension AttentionVariant {
+    var defaultComputeUnits: MLComputeUnits { self == .original 
