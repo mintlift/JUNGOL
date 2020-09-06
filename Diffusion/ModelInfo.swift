@@ -8,4 +8,9 @@
 
 import CoreML
 
-enum AttentionVariant
+enum AttentionVariant: String {
+    case original
+    case splitEinsum
+}
+
+extension AttentionVariant
