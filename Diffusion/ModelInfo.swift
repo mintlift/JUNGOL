@@ -22,4 +22,6 @@ struct ModelInfo {
     let modelId: String
     
     /// Arbitrary string for presentation purposes. Something like "2.1-base"
-    let modelVe
+    let modelVersion: String
+    
+    /// Suffix of the archive containing the ORIGINAL a
