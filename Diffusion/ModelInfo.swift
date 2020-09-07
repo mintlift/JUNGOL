@@ -18,4 +18,7 @@ extension AttentionVariant {
 }
 
 struct ModelInfo {
-    /// Hugging Face model Id that contains .zip archives with co
+    /// Hugging Face model Id that contains .zip archives with compiled Core ML models
+    let modelId: String
+    
+    /// Arbitrary str
