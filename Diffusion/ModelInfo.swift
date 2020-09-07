@@ -21,4 +21,5 @@ struct ModelInfo {
     /// Hugging Face model Id that contains .zip archives with compiled Core ML models
     let modelId: String
     
-    /// Arbitrary str
+    /// Arbitrary string for presentation purposes. Something like "2.1-base"
+    let modelVe
