@@ -24,4 +24,5 @@ struct ModelInfo {
     /// Arbitrary string for presentation purposes. Something like "2.1-base"
     let modelVersion: String
     
-    /// Suffix of the archive containing the ORIGINAL a
+    /// Suffix of the archive containing the ORIGINAL attention variant. Usually something like "original_compiled"
+    
