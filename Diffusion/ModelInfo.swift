@@ -25,4 +25,6 @@ struct ModelInfo {
     let modelVersion: String
     
     /// Suffix of the archive containing the ORIGINAL attention variant. Usually something like "original_compiled"
-    
+    let originalAttentionSuffix: String
+
+    /// Suffix of the arch
