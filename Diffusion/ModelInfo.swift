@@ -28,4 +28,6 @@ struct ModelInfo {
     let originalAttentionSuffix: String
 
     /// Suffix of the archive containing the SPLIT_EINSUM attention variant. Usually something like "split_einsum_compiled"
-    let splitAttentionSuffix: Stri
+    let splitAttentionSuffix: String
+    
+    /// Whether the archive contains 
