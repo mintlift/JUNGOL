@@ -33,4 +33,4 @@ struct ModelInfo {
     /// Whether the archive contains the VAE Encoder (for image to image tasks). Not yet in use.
     let supportsEncoder: Bool
         
-    init(modelId: String, modelVers
+    init(modelId: String, modelVersion: String, originalAttentionSuffix: String = "original_compiled", splitAttent
