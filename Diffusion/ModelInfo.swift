@@ -34,4 +34,6 @@ struct ModelInfo {
     let supportsEncoder: Bool
         
     init(modelId: String, modelVersion: String, originalAttentionSuffix: String = "original_compiled", splitAttentionSuffix: String = "split_einsum_compiled", supportsEncoder: Bool = false) {
-        self
+        self.modelId = modelId
+        self.modelVersion = modelVersion
+       
