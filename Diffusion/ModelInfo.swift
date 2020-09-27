@@ -38,4 +38,8 @@ struct ModelInfo {
         self.modelVersion = modelVersion
         self.originalAttentionSuffix = originalAttentionSuffix
         self.splitAttentionSuffix = splitAttentionSuffix
-      
+        self.supportsEncoder = supportsEncoder
+    }
+}
+
+extension ModelIn
