@@ -36,4 +36,6 @@ struct ModelInfo {
     init(modelId: String, modelVersion: String, originalAttentionSuffix: String = "original_compiled", splitAttentionSuffix: String = "split_einsum_compiled", supportsEncoder: Bool = false) {
         self.modelId = modelId
         self.modelVersion = modelVersion
-        self.originalAttentionSuffix = originalAttentionSuff
+        self.originalAttentionSuffix = originalAttentionSuffix
+        self.splitAttentionSuffix = splitAttentionSuffix
+      
