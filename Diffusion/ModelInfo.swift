@@ -45,4 +45,6 @@ struct ModelInfo {
 extension ModelInfo {
     //TODO: set compute units instead and derive variant from it
     static var defaultAttention: AttentionVariant {
-        guard runn
+        guard runningOnMac else { return .splitEinsum }
+        #if os(macOS)
+        
