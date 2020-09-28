@@ -42,4 +42,5 @@ struct ModelInfo {
     }
 }
 
-extension ModelIn
+extension ModelInfo {
+    //TODO: set compute units instead and derive variant from it
