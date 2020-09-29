@@ -48,4 +48,5 @@ extension ModelInfo {
         guard runningOnMac else { return .splitEinsum }
         #if os(macOS)
         guard Capabilities.hasANE else { return .original }
-        return C
+        return Capabilities.performanceCores >= 8 ? .original : .splitEinsum
+    
