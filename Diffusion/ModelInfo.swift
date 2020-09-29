@@ -47,4 +47,5 @@ extension ModelInfo {
     static var defaultAttention: AttentionVariant {
         guard runningOnMac else { return .splitEinsum }
         #if os(macOS)
-        
+        guard Capabilities.hasANE else { return .original }
+        return C
