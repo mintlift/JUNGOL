@@ -54,4 +54,6 @@ extension ModelInfo {
         #endif
     }
     
-    static var defaultComputeUnits: MLComputeUnits { defaultAttention.defaul
+    static var defaultComputeUnits: MLComputeUnits { defaultAttention.defaultComputeUnits }
+    
+    var bestAttention: AttentionVaria
