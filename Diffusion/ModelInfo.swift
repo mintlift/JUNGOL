@@ -53,4 +53,5 @@ extension ModelInfo {
         return .splitEinsum
         #endif
     }
-   
+    
+    static var defaultComputeUnits: MLComputeUnits { defaultAttention.defaul
