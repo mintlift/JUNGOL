@@ -57,4 +57,5 @@ extension ModelInfo {
     static var defaultComputeUnits: MLComputeUnits { defaultAttention.defaultComputeUnits }
     
     var bestAttention: AttentionVariant { ModelInfo.defaultAttention }
-    var defaultComputeU
+    var defaultComputeUnits: MLComputeUnits { bestAttention.defaultComputeUnits }
+    
