@@ -59,3 +59,4 @@ extension ModelInfo {
     var bestAttention: AttentionVariant { ModelInfo.defaultAttention }
     var defaultComputeUnits: MLComputeUnits { bestAttention.defaultComputeUnits }
     
+    func modelURL(for variant: AttentionVariant) -> URL
