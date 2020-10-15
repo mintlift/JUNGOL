@@ -59,4 +59,5 @@ extension ModelInfo {
     var bestAttention: AttentionVariant { ModelInfo.defaultAttention }
     var defaultComputeUnits: MLComputeUnits { bestAttention.defaultComputeUnits }
     
-    func modelURL(for variant: AttentionVariant) -> URL
+    func modelURL(for variant: AttentionVariant) -> URL {
+        // Pattern: https://huggingface.co/pcuenq/coreml-stable-diffusio
