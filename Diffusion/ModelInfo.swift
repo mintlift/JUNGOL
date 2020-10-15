@@ -60,4 +60,7 @@ extension ModelInfo {
     var defaultComputeUnits: MLComputeUnits { bestAttention.defaultComputeUnits }
     
     func modelURL(for variant: AttentionVariant) -> URL {
-        // Pattern: https://huggingface.co/pcuenq/coreml-stable-diffusion/resolve/main/coreml-stable-diffusion-v1-5_origina
+        // Pattern: https://huggingface.co/pcuenq/coreml-stable-diffusion/resolve/main/coreml-stable-diffusion-v1-5_original_compiled.zip
+        let suffix: String
+        switch variant {
+        ca
