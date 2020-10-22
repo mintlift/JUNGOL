@@ -64,4 +64,6 @@ extension ModelInfo {
         let suffix: String
         switch variant {
         case .original: suffix = originalAttentionSuffix
-        case .splitE
+        case .splitEinsum: suffix = splitAttentionSuffix
+        }
+        let repo = m
