@@ -68,3 +68,7 @@ extension ModelInfo {
         }
         let repo = modelId.split(separator: "/").last!
         return URL(string: "https://huggingface.co/\(modelId)/resolve/main/\(repo)_\(suffix).zip")!
+    }
+    
+    /// Best variant for the current platform.
+    /// Cu
