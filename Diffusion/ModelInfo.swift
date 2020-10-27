@@ -67,4 +67,4 @@ extension ModelInfo {
         case .splitEinsum: suffix = splitAttentionSuffix
         }
         let repo = modelId.split(separator: "/").last!
-        return URL(string: "https:/
+        return URL(string: "https://huggingface.co/\(modelId)/resolve/main/\(repo)_\(suffix).zip")!
