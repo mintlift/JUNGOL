@@ -71,4 +71,6 @@ extension ModelInfo {
     }
     
     /// Best variant for the current platform.
-    /// Currently using `split_einsum` for iOS and simple performance heuristics for
+    /// Currently using `split_einsum` for iOS and simple performance heuristics for macOS.
+    var bestURL: URL { modelURL(for: bestAttention) }
+     
