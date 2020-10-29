@@ -71,4 +71,4 @@ extension ModelInfo {
     }
     
     /// Best variant for the current platform.
-    /// Cu
+    /// Currently using `split_einsum` for iOS and simple performance heuristics for
