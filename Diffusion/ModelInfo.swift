@@ -77,3 +77,8 @@ extension ModelInfo {
     var reduceMemory: Bool {
         return !runningOnMac
     }
+}
+
+extension ModelInfo {
+    // TODO: repo does not exist yet
+    static 
