@@ -81,4 +81,5 @@ extension ModelInfo {
 
 extension ModelInfo {
     // TODO: repo does not exist yet
-    static 
+    static let v14Base = ModelInfo(
+        modelId: "pcuenq/core
