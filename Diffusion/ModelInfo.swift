@@ -83,4 +83,7 @@ extension ModelInfo {
     // TODO: repo does not exist yet
     static let v14Base = ModelInfo(
         modelId: "pcuenq/coreml-stable-diffusion-1-4",
-        modelVersion: "CompVis/stable-di
+        modelVersion: "CompVis/stable-diffusion-v1-4"
+    )
+
+    static let v15Base = Model
