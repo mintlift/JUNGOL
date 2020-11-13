@@ -88,4 +88,7 @@ extension ModelInfo {
 
     static let v15Base = ModelInfo(
         modelId: "pcuenq/coreml-stable-diffusion-v1-5",
-        
+        modelVersion: "runwayml/stable-diffusion-v1-5"
+    )
+    
+  
