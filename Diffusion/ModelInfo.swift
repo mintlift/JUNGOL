@@ -98,4 +98,6 @@ extension ModelInfo {
 
     static let v21Base = ModelInfo(
         modelId: "pcuenq/coreml-stable-diffusion-2-1-base",
-        modelVersion: "stab
+        modelVersion: "stabilityai/stable-diffusion-2-1-base",
+        supportsEncoder: true
+    )
