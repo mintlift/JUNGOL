@@ -97,4 +97,5 @@ extension ModelInfo {
     )
 
     static let v21Base = ModelInfo(
-        modelId: "
+        modelId: "pcuenq/coreml-stable-diffusion-2-1-base",
+        modelVersion: "stab
