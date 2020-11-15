@@ -101,3 +101,6 @@ extension ModelInfo {
         modelVersion: "stabilityai/stable-diffusion-2-1-base",
         supportsEncoder: true
     )
+    
+    static let ofaSmall = ModelInfo(
+        modelId: "p
