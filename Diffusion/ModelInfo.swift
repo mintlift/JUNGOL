@@ -94,3 +94,7 @@ extension ModelInfo {
     static let v2Base = ModelInfo(
         modelId: "pcuenq/coreml-stable-diffusion-2-base",
         modelVersion: "stabilityai/stable-diffusion-2-base"
+    )
+
+    static let v21Base = ModelInfo(
+        modelId: "
