@@ -104,4 +104,7 @@ extension ModelInfo {
     
     static let ofaSmall = ModelInfo(
         modelId: "pcuenq/coreml-small-stable-diffusion-v0",
-        modelVersion: 
+        modelVersion: "OFA-Sys/small-stable-diffusion-v0"
+    )
+
+    static let MODELS = [
