@@ -110,4 +110,7 @@ extension ModelInfo {
     static let MODELS = [
         ModelInfo.v14Base,
         ModelInfo.v15Base,
-        ModelInfo.
+        ModelInfo.v2Base,
+        ModelInfo.v21Base,
+        ModelInfo.ofaSmall
+    ]
