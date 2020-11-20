@@ -114,3 +114,5 @@ extension ModelInfo {
         ModelInfo.v21Base,
         ModelInfo.ofaSmall
     ]
+    
+    static func from(modelVersion: String) -> ModelInfo
