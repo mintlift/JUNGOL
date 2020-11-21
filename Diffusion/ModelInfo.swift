@@ -115,4 +115,5 @@ extension ModelInfo {
         ModelInfo.ofaSmall
     ]
     
-    static func from(modelVersion: String) -> ModelInfo
+    static func from(modelVersion: String) -> ModelInfo? {
+        ModelInfo.MODELS.first(where: {$0.modelVersi
