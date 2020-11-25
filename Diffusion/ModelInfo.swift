@@ -119,4 +119,5 @@ extension ModelInfo {
         ModelInfo.MODELS.first(where: {$0.modelVersion == modelVersion})
     }
     
-    static func from(modelId: S
+    static func from(modelId: String) -> ModelInfo? {
+        ModelInfo.MODELS.first(where: {$0.mo
