@@ -120,4 +120,8 @@ extension ModelInfo {
     }
     
     static func from(modelId: String) -> ModelInfo? {
-        ModelInfo.MODELS.first(where: {$0.mo
+        ModelInfo.MODELS.first(where: {$0.modelId == modelId})
+    }
+}
+
+extension ModelInfo : Equatabl
