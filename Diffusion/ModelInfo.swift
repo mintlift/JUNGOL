@@ -124,4 +124,5 @@ extension ModelInfo {
     }
 }
 
-extension ModelInfo : Equatabl
+extension ModelInfo : Equatable {
+    static func ==(lhs: ModelInfo, rhs: ModelInfo) -> Bool { l
