@@ -125,4 +125,5 @@ extension ModelInfo {
 }
 
 extension ModelInfo : Equatable {
-    static func ==(lhs: ModelInfo, rhs: ModelInfo) -> Bool { l
+    static func ==(lhs: ModelInfo, rhs: ModelInfo) -> Bool { lhs.modelId == rhs.modelId }
+}
