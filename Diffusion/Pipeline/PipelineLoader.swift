@@ -19,3 +19,74 @@ class PipelineLoader {
     static let models = Path.applicationSupport / "hf-diffusion-models"
     
     let model: ModelInfo
+    let computeUnits: ComputeUnits
+    let maxSeed: UInt32
+    
+    private var downloadSubscriber: Cancellable?
+
+    init(model: ModelInfo, computeUnits: ComputeUnits? = nil, maxSeed: UInt32 = UInt32.max) {
+        self.model = model
+        self.computeUnits = computeUnits ?? model.defaultComputeUnits
+        self.maxSeed = maxSeed
+        state = .undetermined
+        setInitialState()
+    }
+        
+    enum PipelinePreparationPhase {
+        case undetermined
+        case waitingToDownload
+        case downloading(Double)
+        case downloaded
+        case uncompressing
+        case readyOnDisk
+        case loaded
+        case failed(Error)
+    }
+    
+    var state: PipelinePreparationPhase {
+        didSet {
+            statePublisher.value = state
+        }
+    }
+    private(set) lazy var statePublisher: CurrentValueSubject<PipelinePreparationPhase, Never> = CurrentValueSubject(state)
+    private(set) var downloader: Downloader? = nil
+
+    func setInitialState() {
+        if ready {
+            state = .readyOnDisk
+            return
+        }
+        if downloaded {
+            state = .downloaded
+            return
+        }
+        state = .waitingToDownload
+    }
+}
+
+extension PipelineLoader {
+    static func removeAll() {
+        try? models.delete()
+    }
+}
+
+extension PipelineLoader {
+    func cancel() { downloader?.cancel() }
+}
+
+extension PipelineLoader {
+    var url: URL {
+        return model.modelURL(for: variant)
+    }
+    
+    var filename: String {
+        return url.lastPathComponent
+    }
+    
+    var downloadedPath: Path { PipelineLoader.models / filename }
+    var downloadedURL: URL { downloadedPath.url }
+
+    var uncompressPath: Path { downloadedPath.parent }
+    
+    var packagesFilename: String { downloadedPath.basename(dropExtension: true) }
+    var compiledPath: Path { downloadedPath.parent/packagesFilename }
