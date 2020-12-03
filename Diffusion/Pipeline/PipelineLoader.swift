@@ -151,3 +151,18 @@ extension PipelineLoader {
         }
         try downloadedPath.delete()
         state = .readyOnDisk
+    }
+    
+    func load(url: URL) async throws -> StableDiffusionPipeline {
+        let beginDate = Date()
+        let configuration = MLModelConfiguration()
+        configuration.computeUnits = computeUnits
+        let pipeline = try StableDiffusionPipeline(resourcesAt: url,
+                                                   configuration: configuration,
+                                                   disableSafety: false,
+                                                   reduceMemory: model.reduceMemory)
+        print("Pipeline loaded in \(Date().timeIntervalSince(beginDate))")
+        state = .loaded
+        return pipeline
+    }
+}
