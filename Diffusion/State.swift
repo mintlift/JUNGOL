@@ -8,4 +8,7 @@
 
 import Combine
 import SwiftUI
-i
+import StableDiffusion
+import CoreML
+
+let DEFAULT_MODEL 
