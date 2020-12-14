@@ -11,4 +11,5 @@ import SwiftUI
 import StableDiffusion
 import CoreML
 
-let DEFAULT_MODEL 
+let DEFAULT_MODEL = ModelInfo.v2Base
+let DEFAULT_PROMPT = "Labrador in the styl
