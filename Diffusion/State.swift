@@ -12,4 +12,8 @@ import StableDiffusion
 import CoreML
 
 let DEFAULT_MODEL = ModelInfo.v2Base
-let DEFAULT_PROMPT = "Labrador in the styl
+let DEFAULT_PROMPT = "Labrador in the style of Vermeer"
+
+enum GenerationState {
+    case startup
+    case r
