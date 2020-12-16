@@ -17,4 +17,6 @@ let DEFAULT_PROMPT = "Labrador in the style of Vermeer"
 enum GenerationState {
     case startup
     case running(StableDiffusionProgress?)
-    case complete(String, CGImage?, UInt
+    case complete(String, CGImage?, UInt32, TimeInterval?)
+    case userCanceled
+    case failed(Err
