@@ -19,4 +19,9 @@ enum GenerationState {
     case running(StableDiffusionProgress?)
     case complete(String, CGImage?, UInt32, TimeInterval?)
     case userCanceled
-    case failed(Err
+    case failed(Error)
+}
+
+typealias ComputeUnits = MLComputeUnits
+
+class GenerationContext: 
