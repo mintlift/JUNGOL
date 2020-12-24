@@ -24,4 +24,5 @@ enum GenerationState {
 
 typealias ComputeUnits = MLComputeUnits
 
-class GenerationContext: 
+class GenerationContext: ObservableObject {
+    let scheduler = StableDiffusionScheduler.dpmSolverMu
