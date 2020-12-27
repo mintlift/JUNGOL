@@ -30,4 +30,5 @@ class GenerationContext: ObservableObject {
     @Published var pipeline: Pipeline? = nil {
         didSet {
             if let pipeline = pipeline {
-       
+                progressSubscriber = pipeline
+                    .progress
