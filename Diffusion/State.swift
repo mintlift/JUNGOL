@@ -31,4 +31,5 @@ class GenerationContext: ObservableObject {
         didSet {
             if let pipeline = pipeline {
                 progressSubscriber = pipeline
-                    .progress
+                    .progressPublisher
+                    .receive(on: DispatchQueue.ma
