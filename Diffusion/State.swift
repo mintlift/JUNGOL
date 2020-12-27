@@ -28,4 +28,6 @@ class GenerationContext: ObservableObject {
     let scheduler = StableDiffusionScheduler.dpmSolverMultistepScheduler
 
     @Published var pipeline: Pipeline? = nil {
-  
+        didSet {
+            if let pipeline = pipeline {
+       
