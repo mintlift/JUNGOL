@@ -35,4 +35,7 @@ class GenerationContext: ObservableObject {
                     .receive(on: DispatchQueue.main)
                     .sink { progress in
                         guard let progress = progress else { return }
-                   
+                        self.state = .running(progress)
+                    }
+            }
+ 
