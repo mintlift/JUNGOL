@@ -34,4 +34,5 @@ class GenerationContext: ObservableObject {
                     .progressPublisher
                     .receive(on: DispatchQueue.main)
                     .sink { progress in
-                  
+                        guard let progress = progress else { return }
+                   
