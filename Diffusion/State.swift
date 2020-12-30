@@ -32,4 +32,6 @@ class GenerationContext: ObservableObject {
             if let pipeline = pipeline {
                 progressSubscriber = pipeline
                     .progressPublisher
-                    .receive(on: DispatchQueue.ma
+                    .receive(on: DispatchQueue.main)
+                    .sink { progress in
+                  
