@@ -38,4 +38,7 @@ class GenerationContext: ObservableObject {
                         self.state = .running(progress)
                     }
             }
- 
+        }
+    }
+    @Published var state: GenerationState = .startup
+    
