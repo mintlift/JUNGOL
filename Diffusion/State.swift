@@ -42,3 +42,5 @@ class GenerationContext: ObservableObject {
     }
     @Published var state: GenerationState = .startup
     
+    @Published var positivePrompt = DEFAULT_PROMPT
+    @Published 
