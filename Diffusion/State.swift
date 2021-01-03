@@ -47,4 +47,6 @@ class GenerationContext: ObservableObject {
     
     // FIXME: Double to support the slider component
     @Published var steps = 25.0
- 
+    @Published var numImages = 1.0
+    @Published var seed = -1.0
+    @Published va
