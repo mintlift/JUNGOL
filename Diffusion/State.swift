@@ -45,4 +45,6 @@ class GenerationContext: ObservableObject {
     @Published var positivePrompt = DEFAULT_PROMPT
     @Published var negativePrompt = ""
     
-    // FIXME: Double to supp
+    // FIXME: Double to support the slider component
+    @Published var steps = 25.0
+ 
