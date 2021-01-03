@@ -50,4 +50,6 @@ class GenerationContext: ObservableObject {
     @Published var numImages = 1.0
     @Published var seed = -1.0
     @Published var guidanceScale = 7.5
-    @Published var disableS
+    @Published var disableSafety = false
+    
+    @Published var computeUnits: ComputeUnits = Setti
