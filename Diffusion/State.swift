@@ -49,4 +49,5 @@ class GenerationContext: ObservableObject {
     @Published var steps = 25.0
     @Published var numImages = 1.0
     @Published var seed = -1.0
-    @Published va
+    @Published var guidanceScale = 7.5
+    @Published var disableS
