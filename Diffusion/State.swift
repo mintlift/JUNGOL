@@ -52,4 +52,4 @@ class GenerationContext: ObservableObject {
     @Published var guidanceScale = 7.5
     @Published var disableSafety = false
     
-    @Published var computeUnits: ComputeUnits = Setti
+    @Published var computeUnits: ComputeUnits = Settings.shared.userSelectedComputeUnits ?? ModelInfo.
