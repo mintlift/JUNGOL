@@ -54,4 +54,6 @@ class GenerationContext: ObservableObject {
     
     @Published var computeUnits: ComputeUnits = Settings.shared.userSelectedComputeUnits ?? ModelInfo.defaultComputeUnits
 
-    private var progressSubscriber: Cancel
+    private var progressSubscriber: Cancellable?
+
+    func generate() async throws -> GenerationRe
