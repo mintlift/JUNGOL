@@ -52,4 +52,6 @@ class GenerationContext: ObservableObject {
     @Published var guidanceScale = 7.5
     @Published var disableSafety = false
     
-    @Published var computeUnits: ComputeUnits = Settings.shared.userSelectedComputeUnits ?? ModelInfo.
+    @Published var computeUnits: ComputeUnits = Settings.shared.userSelectedComputeUnits ?? ModelInfo.defaultComputeUnits
+
+    private var progressSubscriber: Cancel
