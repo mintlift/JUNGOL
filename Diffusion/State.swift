@@ -58,4 +58,5 @@ class GenerationContext: ObservableObject {
 
     func generate() async throws -> GenerationResult {
         guard let pipeline = pipeline else { throw "No pipeline" }
-   
+        let seed = self.seed >= 0 ? UInt32(self.seed) : nil
+        
