@@ -56,4 +56,6 @@ class GenerationContext: ObservableObject {
 
     private var progressSubscriber: Cancellable?
 
-    func generate() async throws -> GenerationRe
+    func generate() async throws -> GenerationResult {
+        guard let pipeline = pipeline else { throw "No pipeline" }
+   
