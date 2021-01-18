@@ -62,4 +62,5 @@ class GenerationContext: ObservableObject {
         return try pipeline.generate(
             prompt: positivePrompt,
             negativePrompt: negativePrompt,
-     
+            scheduler: scheduler,
+            numInferenceSteps: Int(s
