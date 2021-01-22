@@ -63,4 +63,6 @@ class GenerationContext: ObservableObject {
             prompt: positivePrompt,
             negativePrompt: negativePrompt,
             scheduler: scheduler,
-            numInferenceSteps: Int(s
+            numInferenceSteps: Int(steps),
+            seed: seed,
+            guidanceSc
