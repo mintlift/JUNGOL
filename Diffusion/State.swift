@@ -65,4 +65,5 @@ class GenerationContext: ObservableObject {
             scheduler: scheduler,
             numInferenceSteps: Int(steps),
             seed: seed,
-            guidanceSc
+            guidanceScale: Float(guidanceScale),
+            disableSafety: disable
