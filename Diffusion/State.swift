@@ -66,4 +66,9 @@ class GenerationContext: ObservableObject {
             numInferenceSteps: Int(steps),
             seed: seed,
             guidanceScale: Float(guidanceScale),
-            disableSafety: disable
+            disableSafety: disableSafety
+        )
+    }
+    
+    func cancelGeneration() {
+    
