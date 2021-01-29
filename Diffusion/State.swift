@@ -71,4 +71,9 @@ class GenerationContext: ObservableObject {
     }
     
     func cancelGeneration() {
-    
+        pipeline?.setCancelled()
+    }
+}
+
+class Settings {
+    st
