@@ -76,4 +76,6 @@ class GenerationContext: ObservableObject {
 }
 
 class Settings {
-    st
+    static let shared = Settings()
+    
+    let defaults = 
