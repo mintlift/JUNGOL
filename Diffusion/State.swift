@@ -78,4 +78,8 @@ class GenerationContext: ObservableObject {
 class Settings {
     static let shared = Settings()
     
-    let defaults = 
+    let defaults = UserDefaults.standard
+    
+    enum Keys: String {
+        case model
+ 
