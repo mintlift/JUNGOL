@@ -82,4 +82,8 @@ class Settings {
     
     enum Keys: String {
         case model
- 
+        case safetyCheckerDisclaimer
+        case computeUnits
+    }
+    
+    priv
