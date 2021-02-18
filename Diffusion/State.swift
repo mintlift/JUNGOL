@@ -86,4 +86,6 @@ class Settings {
         case computeUnits
     }
     
-    priv
+    private init() {
+        defaults.register(defaults: [
+            Keys.model.rawValu
