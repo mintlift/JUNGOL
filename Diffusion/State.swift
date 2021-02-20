@@ -90,4 +90,8 @@ class Settings {
         defaults.register(defaults: [
             Keys.model.rawValue: ModelInfo.v2Base.modelId,
             Keys.safetyCheckerDisclaimer.rawValue: false,
-            Keys.computeUnits.rawValue: -1      // Use 
+            Keys.computeUnits.rawValue: -1      // Use default
+        ])
+    }
+    
+    var currentModel: ModelInf
