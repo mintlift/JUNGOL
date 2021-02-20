@@ -89,4 +89,5 @@ class Settings {
     private init() {
         defaults.register(defaults: [
             Keys.model.rawValue: ModelInfo.v2Base.modelId,
-            Keys.safetyCheckerDisclaimer.rawVa
+            Keys.safetyCheckerDisclaimer.rawValue: false,
+            Keys.computeUnits.rawValue: -1      // Use 
