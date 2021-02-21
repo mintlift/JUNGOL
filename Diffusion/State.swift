@@ -96,4 +96,7 @@ class Settings {
     
     var currentModel: ModelInfo {
         set {
-            defaults.set(newValue.modelId, 
+            defaults.set(newValue.modelId, forKey: Keys.model.rawValue)
+        }
+        get {
+            guard let 
