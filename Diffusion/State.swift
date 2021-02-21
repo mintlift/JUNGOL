@@ -94,4 +94,6 @@ class Settings {
         ])
     }
     
-    var currentModel: ModelInf
+    var currentModel: ModelInfo {
+        set {
+            defaults.set(newValue.modelId, 
