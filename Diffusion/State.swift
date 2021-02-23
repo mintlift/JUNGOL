@@ -99,4 +99,5 @@ class Settings {
             defaults.set(newValue.modelId, forKey: Keys.model.rawValue)
         }
         get {
-            guard let modelId = defaults.string(forKey: Keys.model.rawValue) else { return DEFAULT_
+            guard let modelId = defaults.string(forKey: Keys.model.rawValue) else { return DEFAULT_MODEL }
+            return ModelInfo.from(modelId: modelId) ?? DEFAUL
