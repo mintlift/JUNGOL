@@ -104,4 +104,6 @@ class Settings {
         }
     }
     
-    var safetyCheckerDisclaimerShown: Bool 
+    var safetyCheckerDisclaimerShown: Bool {
+        set {
+            defaults.set(newValue, forKey: Keys
