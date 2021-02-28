@@ -100,4 +100,8 @@ class Settings {
         }
         get {
             guard let modelId = defaults.string(forKey: Keys.model.rawValue) else { return DEFAULT_MODEL }
-            return ModelInfo.from(modelId: modelId) ?? DEFAUL
+            return ModelInfo.from(modelId: modelId) ?? DEFAULT_MODEL
+        }
+    }
+    
+    var safetyCheckerDisclaimerShown: Bool 
