@@ -106,4 +106,7 @@ class Settings {
     
     var safetyCheckerDisclaimerShown: Bool {
         set {
-            defaults.set(newValue, forKey: Keys
+            defaults.set(newValue, forKey: Keys.safetyCheckerDisclaimer.rawValue)
+        }
+        get {
+            retu
