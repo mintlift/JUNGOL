@@ -109,4 +109,5 @@ class Settings {
             defaults.set(newValue, forKey: Keys.safetyCheckerDisclaimer.rawValue)
         }
         get {
-            retu
+            return defaults.bool(forKey: Keys.safetyCheckerDisclaimer.rawValue)
+ 
