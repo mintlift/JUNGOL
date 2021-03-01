@@ -110,4 +110,7 @@ class Settings {
         }
         get {
             return defaults.bool(forKey: Keys.safetyCheckerDisclaimer.rawValue)
- 
+        }
+    }
+    
+    /// Returns the option selected by the user, if overr
