@@ -115,4 +115,6 @@ class Settings {
     
     /// Returns the option selected by the user, if overridden
     /// `nil` means: guess best
-    var userSelectedCo
+    var userSelectedComputeUnits: ComputeUnits? {
+        set {
+            
