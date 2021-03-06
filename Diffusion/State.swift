@@ -113,4 +113,6 @@ class Settings {
         }
     }
     
-    /// Returns the option selected by the user, if overr
+    /// Returns the option selected by the user, if overridden
+    /// `nil` means: guess best
+    var userSelectedCo
