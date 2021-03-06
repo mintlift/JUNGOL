@@ -117,4 +117,5 @@ class Settings {
     /// `nil` means: guess best
     var userSelectedComputeUnits: ComputeUnits? {
         set {
-            // Any value other than the supported ones would cause `get` to return `
+            // Any value other than the supported ones would cause `get` to return `nil`
+            defaults.set(newValue?.rawValue ?? -1, forKey: Keys.comp
