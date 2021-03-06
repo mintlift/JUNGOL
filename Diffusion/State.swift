@@ -117,4 +117,4 @@ class Settings {
     /// `nil` means: guess best
     var userSelectedComputeUnits: ComputeUnits? {
         set {
-            
+            // Any value other than the supported ones would cause `get` to return `
