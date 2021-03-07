@@ -118,4 +118,7 @@ class Settings {
     var userSelectedComputeUnits: ComputeUnits? {
         set {
             // Any value other than the supported ones would cause `get` to return `nil`
-            defaults.set(newValue?.rawValue ?? -1, forKey: Keys.comp
+            defaults.set(newValue?.rawValue ?? -1, forKey: Keys.computeUnits.rawValue)
+        }
+        get {
+            let curren
