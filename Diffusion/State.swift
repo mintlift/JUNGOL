@@ -121,4 +121,5 @@ class Settings {
             defaults.set(newValue?.rawValue ?? -1, forKey: Keys.computeUnits.rawValue)
         }
         get {
-            let curren
+            let current = defaults.integer(forKey: Keys.computeUnits.rawValue)
+            g
