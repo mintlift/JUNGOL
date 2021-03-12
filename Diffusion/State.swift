@@ -122,4 +122,5 @@ class Settings {
         }
         get {
             let current = defaults.integer(forKey: Keys.computeUnits.rawValue)
-            g
+            guard current != -1 else { return nil }
+            return Compute
