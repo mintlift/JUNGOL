@@ -6,4 +6,9 @@
 //  See LICENSE at https://github.com/huggingface/swift-coreml-diffusers/LICENSE
 //
 
-import Founda
+import Foundation
+
+extension String: Error {}
+
+extension Double {
+    fun
