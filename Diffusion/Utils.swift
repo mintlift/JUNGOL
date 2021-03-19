@@ -12,4 +12,6 @@ extension String: Error {}
 
 extension Double {
     func formatted(_ format: String) -> String {
-        return String(format:
+        return String(format: "\(format)", self)
+    }
+}
