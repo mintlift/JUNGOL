@@ -48,3 +48,47 @@ struct LoadingView: View {
                         case .downloading(let progress):
                             preparationPhase = "Downloading"
                             downloadProgress = progress
+                        case .uncompressing:
+                            preparationPhase = "Uncompressing"
+                            downloadProgress = 1
+                        case .readyOnDisk:
+                            preparationPhase = "Loading"
+                            downloadProgress = 1
+                        default:
+                            break
+                        }
+                    }
+                }
+                do {
+                    generation.pipeline = try await loader.prepare()
+                    self.currentView = .textToImage
+                } catch {
+                    self.currentView = .error("Could not load model, error: \(error)")
+                }
+            }            
+        }
+    }
+}
+
+// Required by .animation
+extension LoadingView.CurrentView: Equatable {}
+
+struct ErrorPopover: View {
+    var errorMessage: String
+
+    var body: some View {
+        Text(errorMessage)
+            .font(.headline)
+            .padding()
+            .foregroundColor(.red)
+            .background(Color.white)
+            .cornerRadius(8)
+            .shadow(color: Color.black.opacity(0.2), radius: 8, x: 0, y: 4)
+    }
+}
+
+struct LoadingView_Previews: PreviewProvider {
+    static var previews: some View {
+        LoadingView()
+    }
+}
