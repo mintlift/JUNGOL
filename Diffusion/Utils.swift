@@ -11,4 +11,5 @@ import Foundation
 extension String: Error {}
 
 extension Double {
-    fun
+    func formatted(_ format: String) -> String {
+        return String(format:
