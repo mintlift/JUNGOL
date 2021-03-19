@@ -1,3 +1,5 @@
 //
 //  TextToImage.swift
-//  Di
+//  Diffusion
+//
+//  Created by Pedro Cuenca on December
