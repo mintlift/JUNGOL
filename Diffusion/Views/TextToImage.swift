@@ -17,4 +17,5 @@ struct ShareButtons: View {
     var image: CGImage
     var name: String
     
-    var filen
+    var filename: String {
+        name.replacingO
