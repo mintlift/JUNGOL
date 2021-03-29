@@ -12,4 +12,6 @@ import StableDiffusion
 
 
 /// Presents "Share" + "Save" buttons on Mac; just "Share" on iOS/iPadOS.
-/// This is because I didn't find a way for "Share" to s
+/// This is because I didn't find a way for "Share" to show a Save option when running on macOS.
+struct ShareButtons: View {
+  
