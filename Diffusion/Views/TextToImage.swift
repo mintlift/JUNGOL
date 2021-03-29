@@ -11,4 +11,5 @@ import Combine
 import StableDiffusion
 
 
-/// Presents "Share" + "Save" buttons on Mac; just "Share" on 
+/// Presents "Share" + "Save" buttons on Mac; just "Share" on iOS/iPadOS.
+/// This is because I didn't find a way for "Share" to s
