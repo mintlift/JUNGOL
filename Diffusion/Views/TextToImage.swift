@@ -24,4 +24,6 @@ struct ShareButtons: View {
     var body: some View {
         let imageView = Image(image, scale: 1, label: Text(name))
 
-     
+        if runningOnMac {
+            HStack {
+                S
