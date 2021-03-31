@@ -18,4 +18,8 @@ struct ShareButtons: View {
     var name: String
     
     var filename: String {
-        name.replacingO
+        name.replacingOccurrences(of: " ", with: "_")
+    }
+    
+    var body: some View {
+     
