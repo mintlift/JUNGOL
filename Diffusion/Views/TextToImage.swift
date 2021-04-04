@@ -26,4 +26,6 @@ struct ShareButtons: View {
 
         if runningOnMac {
             HStack {
-                ShareLink(item: imageView, preview: SharePreview(name, image: imageView
+                ShareLink(item: imageView, preview: SharePreview(name, image: imageView))
+                Button() {
+                    guard let image
