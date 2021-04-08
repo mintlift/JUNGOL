@@ -29,4 +29,6 @@ struct ShareButtons: View {
                 ShareLink(item: imageView, preview: SharePreview(name, image: imageView))
                 Button() {
                     guard let imageData = UIImage(cgImage: image).pngData() else {
-                  
+                        return
+                    }
+                    
