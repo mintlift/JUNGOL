@@ -31,4 +31,5 @@ struct ShareButtons: View {
                     guard let imageData = UIImage(cgImage: image).pngData() else {
                         return
                     }
-                    
+                    do {
+                        let fileURL = FileManager.default.t
