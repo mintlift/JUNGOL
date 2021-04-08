@@ -28,4 +28,5 @@ struct ShareButtons: View {
             HStack {
                 ShareLink(item: imageView, preview: SharePreview(name, image: imageView))
                 Button() {
-                    guard let image
+                    guard let imageData = UIImage(cgImage: image).pngData() else {
+                  
