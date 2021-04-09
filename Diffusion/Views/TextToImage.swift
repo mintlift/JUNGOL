@@ -32,4 +32,5 @@ struct ShareButtons: View {
                         return
                     }
                     do {
-                        let fileURL = FileManager.default.t
+                        let fileURL = FileManager.default.temporaryDirectory.appendingPathComponent("\(filename).png")
+                      
