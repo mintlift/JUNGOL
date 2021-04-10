@@ -36,4 +36,5 @@ struct ShareButtons: View {
                         try imageData.write(to: fileURL)
                         let controller = UIDocumentPickerViewController(forExporting: [fileURL])
                         
-                        let scene = UIA
+                        let scene = UIApplication.shared.connectedScenes.first as! UIWindowScene
+             
