@@ -37,4 +37,6 @@ struct ShareButtons: View {
                         let controller = UIDocumentPickerViewController(forExporting: [fileURL])
                         
                         let scene = UIApplication.shared.connectedScenes.first as! UIWindowScene
-                        scene.windows.first!.rootViewController!.present(controll
+                        scene.windows.first!.rootViewController!.present(controller, animated: true)
+                    } catch {
+   
