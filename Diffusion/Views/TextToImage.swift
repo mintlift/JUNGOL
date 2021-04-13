@@ -39,4 +39,5 @@ struct ShareButtons: View {
                         let scene = UIApplication.shared.connectedScenes.first as! UIWindowScene
                         scene.windows.first!.rootViewController!.present(controller, animated: true)
                     } catch {
+                        print("Error creating file")
    
