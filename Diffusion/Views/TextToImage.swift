@@ -40,4 +40,6 @@ struct ShareButtons: View {
                         scene.windows.first!.rootViewController!.present(controller, animated: true)
                     } catch {
                         print("Error creating file")
-   
+                    }
+                } label: {
+                    Label("Save
