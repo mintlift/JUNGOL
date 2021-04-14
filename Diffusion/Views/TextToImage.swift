@@ -42,4 +42,6 @@ struct ShareButtons: View {
                         print("Error creating file")
                     }
                 } label: {
-                    Label("Save
+                    Label("Save…", systemImage: "square.and.arrow.down")
+                }
+      
