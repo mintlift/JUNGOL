@@ -51,4 +51,6 @@ struct ShareButtons: View {
     }
 }
 
-struc
+struct ImageWithPlaceholder: View {
+    var state: Binding<GenerationState>
+      
