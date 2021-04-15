@@ -44,4 +44,6 @@ struct ShareButtons: View {
                 } label: {
                     Label("Save…", systemImage: "square.and.arrow.down")
                 }
-      
+            }
+        } else {
+            ShareLink(item: imageView, p
