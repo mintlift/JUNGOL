@@ -46,4 +46,9 @@ struct ShareButtons: View {
                 }
             }
         } else {
-            ShareLink(item: imageView, p
+            ShareLink(item: imageView, preview: SharePreview(name, image: imageView))
+        }
+    }
+}
+
+struc
