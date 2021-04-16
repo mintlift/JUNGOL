@@ -53,4 +53,7 @@ struct ShareButtons: View {
 
 struct ImageWithPlaceholder: View {
     var state: Binding<GenerationState>
-      
+        
+    var body: some View {
+        switch state.wrappedValue {
+   
