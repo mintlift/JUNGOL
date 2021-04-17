@@ -56,4 +56,6 @@ struct ImageWithPlaceholder: View {
         
     var body: some View {
         switch state.wrappedValue {
-        case .startup: return AnyView(Image("placeholder").resizable()
+        case .startup: return AnyView(Image("placeholder").resizable())
+        case .running(let progress):
+            guard let progress = prog
