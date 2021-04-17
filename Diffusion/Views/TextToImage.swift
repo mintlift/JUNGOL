@@ -58,4 +58,5 @@ struct ImageWithPlaceholder: View {
         switch state.wrappedValue {
         case .startup: return AnyView(Image("placeholder").resizable())
         case .running(let progress):
-            guard let progress = prog
+            guard let progress = progress, progress.stepCount > 0 else {
+                
