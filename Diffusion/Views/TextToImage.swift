@@ -56,4 +56,4 @@ struct ImageWithPlaceholder: View {
         
     var body: some View {
         switch state.wrappedValue {
-   
+        case .startup: return AnyView(Image("placeholder").resizable()
