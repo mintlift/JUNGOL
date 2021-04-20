@@ -59,4 +59,6 @@ struct ImageWithPlaceholder: View {
         case .startup: return AnyView(Image("placeholder").resizable())
         case .running(let progress):
             guard let progress = progress, progress.stepCount > 0 else {
-                // The first time it takes a little bit before generation st
+                // The first time it takes a little bit before generation starts
+                return AnyView(ProgressView())
+     
