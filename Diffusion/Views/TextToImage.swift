@@ -65,4 +65,5 @@ struct ImageWithPlaceholder: View {
             let step = Int(progress.step) + 1
             let fraction = Double(step) / Double(progress.stepCount)
             let label = "Step \(step) of \(progress.stepCount)"
-            return AnyView(ProgressView(label, value: fraction, total: 1
+            return AnyView(ProgressView(label, value: fraction, total: 1).padding())
+        case .complete(let lastPrompt, let image, _, let 
