@@ -71,4 +71,7 @@ struct ImageWithPlaceholder: View {
                 return AnyView(Image(systemName: "exclamationmark.triangle").resizable())
             }
                               
-            let imageView = Image(theImage, scale: 1, label: Text("genera
+            let imageView = Image(theImage, scale: 1, label: Text("generated"))
+            return AnyView(
+                VStack {
+     
