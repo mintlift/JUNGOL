@@ -74,4 +74,6 @@ struct ImageWithPlaceholder: View {
             let imageView = Image(theImage, scale: 1, label: Text("generated"))
             return AnyView(
                 VStack {
-                    imageView.resizable().clipShape(RoundedRectangle(cornerRadiu
+                    imageView.resizable().clipShape(RoundedRectangle(cornerRadius: 20))
+                    HStack {
+                        let interva
