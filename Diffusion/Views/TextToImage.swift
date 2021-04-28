@@ -76,4 +76,5 @@ struct ImageWithPlaceholder: View {
                 VStack {
                     imageView.resizable().clipShape(RoundedRectangle(cornerRadius: 20))
                     HStack {
-                        let interva
+                        let intervalString = String(format: "Time: %.1fs", interval ?? 0)
+             
