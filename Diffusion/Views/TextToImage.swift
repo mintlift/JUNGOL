@@ -77,4 +77,5 @@ struct ImageWithPlaceholder: View {
                     imageView.resizable().clipShape(RoundedRectangle(cornerRadius: 20))
                     HStack {
                         let intervalString = String(format: "Time: %.1fs", interval ?? 0)
-                        Rectangle().fill(.clear).overlay(Text(intervalString).frame(maxWidth: .infinity, alignment: .leading).padding(.leadin
+                        Rectangle().fill(.clear).overlay(Text(intervalString).frame(maxWidth: .infinity, alignment: .leading).padding(.leading))
+                        Rectangle().fill(.clear)
