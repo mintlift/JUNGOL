@@ -78,4 +78,6 @@ struct ImageWithPlaceholder: View {
                     HStack {
                         let intervalString = String(format: "Time: %.1fs", interval ?? 0)
                         Rectangle().fill(.clear).overlay(Text(intervalString).frame(maxWidth: .infinity, alignment: .leading).padding(.leading))
-                        Rectangle().fill(.clear)
+                        Rectangle().fill(.clear).overlay(
+                            HStack {
+                         
