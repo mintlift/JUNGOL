@@ -80,4 +80,5 @@ struct ImageWithPlaceholder: View {
                         Rectangle().fill(.clear).overlay(Text(intervalString).frame(maxWidth: .infinity, alignment: .leading).padding(.leading))
                         Rectangle().fill(.clear).overlay(
                             HStack {
-                         
+                                Spacer()
+                                ShareButtons(image: theIma
