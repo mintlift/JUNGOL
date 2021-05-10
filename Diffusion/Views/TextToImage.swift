@@ -81,4 +81,6 @@ struct ImageWithPlaceholder: View {
                         Rectangle().fill(.clear).overlay(
                             HStack {
                                 Spacer()
-                                ShareButtons(image: theIma
+                                ShareButtons(image: theImage, name: lastPrompt).padding(.trailing)
+                            }
+       
