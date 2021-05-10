@@ -83,4 +83,7 @@ struct ImageWithPlaceholder: View {
                                 Spacer()
                                 ShareButtons(image: theImage, name: lastPrompt).padding(.trailing)
                             }
-       
+                        )
+                    }.frame(maxHeight: 25)
+            })
+      
