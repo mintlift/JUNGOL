@@ -89,4 +89,6 @@ struct ImageWithPlaceholder: View {
         case .failed(_):
             return AnyView(Image(systemName: "exclamationmark.triangle").resizable())
         case .userCanceled:
-            r
+            return AnyView(Text("Generation canceled"))
+        }
+   
