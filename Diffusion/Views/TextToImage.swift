@@ -86,4 +86,5 @@ struct ImageWithPlaceholder: View {
                         )
                     }.frame(maxHeight: 25)
             })
-      
+        case .failed(_):
+            return AnyView(Image(systemName: "exclamat
