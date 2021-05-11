@@ -87,4 +87,6 @@ struct ImageWithPlaceholder: View {
                     }.frame(maxHeight: 25)
             })
         case .failed(_):
-            return AnyView(Image(systemName: "exclamat
+            return AnyView(Image(systemName: "exclamationmark.triangle").resizable())
+        case .userCanceled:
+            r
