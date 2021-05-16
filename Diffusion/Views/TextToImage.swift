@@ -91,4 +91,8 @@ struct ImageWithPlaceholder: View {
         case .userCanceled:
             return AnyView(Text("Generation canceled"))
         }
-   
+    }
+}
+
+struct TextToImage: View {
+    @EnvironmentObject var gen
