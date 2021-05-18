@@ -95,4 +95,7 @@ struct ImageWithPlaceholder: View {
 }
 
 struct TextToImage: View {
-    @EnvironmentObject var gen
+    @EnvironmentObject var generation: GenerationContext
+
+    func submit() {
+        if case .
