@@ -102,4 +102,5 @@ struct TextToImage: View {
         Task {
             generation.state = .running(nil)
             do {
-                l
+                let result = try await generation.generate()
+          
