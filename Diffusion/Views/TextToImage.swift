@@ -98,4 +98,6 @@ struct TextToImage: View {
     @EnvironmentObject var generation: GenerationContext
 
     func submit() {
-        if case .
+        if case .running = generation.state { return }
+        Task {
+          
