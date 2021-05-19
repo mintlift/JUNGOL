@@ -100,4 +100,6 @@ struct TextToImage: View {
     func submit() {
         if case .running = generation.state { return }
         Task {
-          
+            generation.state = .running(nil)
+            do {
+                l
