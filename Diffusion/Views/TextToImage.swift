@@ -107,3 +107,9 @@ struct TextToImage: View {
             } catch {
                 generation.state = .failed(error)
             }
+        }
+    }
+    
+    var body: some View {
+        VStack {
+  
