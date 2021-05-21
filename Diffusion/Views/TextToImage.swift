@@ -104,4 +104,6 @@ struct TextToImage: View {
             do {
                 let result = try await generation.generate()
                 generation.state = .complete(generation.positivePrompt, result.image, result.lastSeed, result.interval)
-        
+            } catch {
+                generation.state = .failed(error)
+            }
