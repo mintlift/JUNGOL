@@ -103,4 +103,5 @@ struct TextToImage: View {
             generation.state = .running(nil)
             do {
                 let result = try await generation.generate()
-                generation.state = .complete(generation.positivePrompt, 
+                generation.state = .complete(generation.positivePrompt, result.image, result.lastSeed, result.interval)
+        
