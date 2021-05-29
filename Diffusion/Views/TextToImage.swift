@@ -112,4 +112,5 @@ struct TextToImage: View {
     
     var body: some View {
         VStack {
-  
+            HStack {
+                TextField("Prompt", text: $generati
