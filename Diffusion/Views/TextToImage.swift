@@ -117,4 +117,6 @@ struct TextToImage: View {
                     .textFieldStyle(.roundedBorder)
                     .onSubmit {
                         submit()
- 
+                    }
+                Button("Generate") {
+      
