@@ -115,4 +115,6 @@ struct TextToImage: View {
             HStack {
                 TextField("Prompt", text: $generation.positivePrompt)
                     .textFieldStyle(.roundedBorder)
-       
+                    .onSubmit {
+                        submit()
+ 
