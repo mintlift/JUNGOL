@@ -119,4 +119,6 @@ struct TextToImage: View {
                         submit()
                     }
                 Button("Generate") {
-      
+                    submit()
+                }
+                .padding()
