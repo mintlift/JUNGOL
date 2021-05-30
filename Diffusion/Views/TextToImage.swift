@@ -123,4 +123,5 @@ struct TextToImage: View {
                 }
                 .padding()
                 .buttonStyle(.borderedProminent)
-     
+            }
+            ImageWithPlaceholder(state: $generation.st
