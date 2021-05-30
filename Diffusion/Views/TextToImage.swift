@@ -122,3 +122,5 @@ struct TextToImage: View {
                     submit()
                 }
                 .padding()
+                .buttonStyle(.borderedProminent)
+     
