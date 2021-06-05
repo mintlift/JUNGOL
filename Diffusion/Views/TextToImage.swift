@@ -127,4 +127,7 @@ struct TextToImage: View {
             ImageWithPlaceholder(state: $generation.state)
                 .scaledToFit()
             Spacer()
- 
+        }
+        .padding()
+    }
+}
