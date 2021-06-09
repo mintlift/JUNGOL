@@ -115,3 +115,66 @@ struct ControlsView: View {
                         pipelineState = .uncompressing
                     case .readyOnDisk:
                         pipelineState = .loading
+                    case .failed(let error):
+                        pipelineState = .failed(error)
+                    default:
+                        break
+                    }
+                }
+            }
+            do {
+                generation.pipeline = try await loader.prepare()
+                pipelineState = .ready
+            } catch {
+                print("Could not load model, error: \(error)")
+                pipelineState = .failed(error)
+            }
+        }
+    }
+    
+    func isModelDownloaded(_ model: ModelInfo, computeUnits: ComputeUnits? = nil) -> Bool {
+        PipelineLoader(model: model, computeUnits: computeUnits ?? generation.computeUnits).ready
+    }
+    
+    func modelLabel(_ model: ModelInfo) -> Text {
+        let downloaded = isModelDownloaded(model)
+        let prefix = downloaded ? "● " : "◌ "  //"○ "
+        return Text(prefix).foregroundColor(downloaded ? .accentColor : .secondary) + Text(model.modelVersion)
+    }
+    
+    var modelFilename: String? {
+        guard let pipelineLoader = pipelineLoader else { return nil }
+        let selectedPath = pipelineLoader.compiledPath
+        guard selectedPath.exists else { return nil }
+        return selectedPath.string
+    }
+    
+    var body: some View {
+        VStack(alignment: .leading) {
+            
+            Label("Generation Options", systemImage: "gearshape.2")
+                .font(.headline)
+                .fontWeight(.bold)
+            Divider()
+            
+            ScrollView {
+                Group {
+                    DisclosureGroup(isExpanded: $disclosedModel) {
+                        let revealOption = "-- reveal --"
+                        Picker("", selection: $model) {
+                            ForEach(Self.models, id: \.modelVersion) {
+                                modelLabel($0)
+                            }
+                            Text("Reveal in Finder…").tag(revealOption)
+                        }
+                        .onChange(of: model) { selection in
+                            guard selection != revealOption else {
+                                NSWorkspace.shared.selectFile(modelFilename, inFileViewerRootedAtPath: PipelineLoader.models.string)
+                                model = Settings.shared.currentModel.modelVersion
+                                return
+                            }
+                            guard let model = ModelInfo.from(modelVersion: selection) else { return }
+                            modelDidChange(model: model)
+                        }
+                    } label: {
+                        HStack {
