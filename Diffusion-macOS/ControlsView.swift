@@ -178,3 +178,74 @@ struct ControlsView: View {
                         }
                     } label: {
                         HStack {
+                            Label("Model from Hub", systemImage: "cpu").foregroundColor(.secondary)
+                            Spacer()
+                            if disclosedModel {
+                                Button {
+                                    showModelsHelp.toggle()
+                                } label: {
+                                    Image(systemName: "info.circle")
+                                }
+                                .buttonStyle(.plain)
+                                // Or maybe use .sheet instead
+                                .sheet(isPresented: $showModelsHelp) {
+                                    modelsHelp($showModelsHelp)
+                                }
+                            }
+                        }.foregroundColor(.secondary)
+                    }
+                    Divider()
+                    
+                    DisclosureGroup(isExpanded: $disclosedPrompt) {
+                        Group {
+                            TextField("Positive prompt", text: $generation.positivePrompt,
+                                      axis: .vertical).lineLimit(5)
+                                .textFieldStyle(.squareBorder)
+                                .listRowInsets(EdgeInsets(top: 0, leading: -20, bottom: 0, trailing: 20))
+                            TextField("Negative prompt", text: $generation.negativePrompt,
+                                      axis: .vertical).lineLimit(5)
+                                .textFieldStyle(.squareBorder)
+                        }.padding(.leading, 10)
+                    } label: {
+                        HStack {
+                            Label("Prompts", systemImage: "text.quote").foregroundColor(.secondary)
+                            Spacer()
+                            if disclosedPrompt {
+                                Button {
+                                    showPromptsHelp.toggle()
+                                } label: {
+                                    Image(systemName: "info.circle")
+                                }
+                                .buttonStyle(.plain)
+                                // Or maybe use .sheet instead
+                                .popover(isPresented: $showPromptsHelp, arrowEdge: .trailing) {
+                                    promptsHelp($showPromptsHelp)
+                                }
+                            }
+                        }.foregroundColor(.secondary)
+                    }
+                    Divider()
+
+                    let guidanceScaleValue = generation.guidanceScale.formatted("%.1f")
+                    DisclosureGroup(isExpanded: $disclosedGuidance) {
+                        CompactSlider(value: $generation.guidanceScale, in: 0...20, step: 0.5) {
+                            Text("Guidance Scale")
+                            Spacer()
+                            Text(guidanceScaleValue)
+                        }.padding(.leading, 10)
+                    } label: {
+                        HStack {
+                            Label("Guidance Scale", systemImage: "scalemass").foregroundColor(.secondary)
+                            Spacer()
+                            if disclosedGuidance {
+                                Button {
+                                    showGuidanceHelp.toggle()
+                                } label: {
+                                    Image(systemName: "info.circle")
+                                }
+                                .buttonStyle(.plain)
+                                // Or maybe use .sheet instead
+                                .popover(isPresented: $showGuidanceHelp, arrowEdge: .trailing) {
+                                    guidanceHelp($showGuidanceHelp)
+                                }
+                            } else {
