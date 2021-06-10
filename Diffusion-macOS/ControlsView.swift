@@ -249,3 +249,69 @@ struct ControlsView: View {
                                     guidanceHelp($showGuidanceHelp)
                                 }
                             } else {
+                                Text(guidanceScaleValue)
+                            }
+                        }.foregroundColor(.secondary)
+                    }
+
+                    DisclosureGroup(isExpanded: $disclosedSteps) {
+                        CompactSlider(value: $generation.steps, in: 0...150, step: 5) {
+                            Text("Steps")
+                            Spacer()
+                            Text("\(Int(generation.steps))")
+                        }.padding(.leading, 10)
+                    } label: {
+                        HStack {
+                            Label("Step count", systemImage: "square.3.layers.3d.down.left").foregroundColor(.secondary)
+                            Spacer()
+                            if disclosedSteps {
+                                Button {
+                                    showStepsHelp.toggle()
+                                } label: {
+                                    Image(systemName: "info.circle")
+                                }
+                                .buttonStyle(.plain)
+                                .popover(isPresented: $showStepsHelp, arrowEdge: .trailing) {
+                                    stepsHelp($showStepsHelp)
+                                }
+                            } else {
+                                Text("\(Int(generation.steps))")
+                            }
+                        }.foregroundColor(.secondary)
+                    }
+                                        
+                    DisclosureGroup(isExpanded: $disclosedSeed) {
+                        let sliderLabel = generation.seed < 0 ? "Random Seed" : "Seed"
+                        CompactSlider(value: $generation.seed, in: -1...Double(maxSeed), step: 1) {
+                            Text(sliderLabel)
+                            Spacer()
+                            Text("\(Int(generation.seed))")
+                        }.padding(.leading, 10)
+                    } label: {
+                        HStack {
+                            Label("Seed", systemImage: "leaf").foregroundColor(.secondary)
+                            Spacer()
+                            if disclosedSeed {
+                                Button {
+                                    showSeedHelp.toggle()
+                                } label: {
+                                    Image(systemName: "info.circle")
+                                }
+                                .buttonStyle(.plain)
+                                .popover(isPresented: $showSeedHelp, arrowEdge: .trailing) {
+                                    seedHelp($showSeedHelp)
+                                }
+                            } else {
+                                Text("\(Int(generation.seed))")
+                            }
+                        }.foregroundColor(.secondary)
+                    }
+                    
+                    if Capabilities.hasANE {
+                        Divider()
+                        DisclosureGroup(isExpanded: $disclosedAdvanced) {
+                            HStack {
+                                Picker(selection: $generation.computeUnits, label: Text("Use")) {
+                                    Text("GPU").tag(ComputeUnits.cpuAndGPU)
+                                    Text("Neural Engine").tag(ComputeUnits.cpuAndNeuralEngine)
+                                    Text("GPU and Neural Engine").tag(ComputeUnits.all)
