@@ -315,3 +315,72 @@ struct ControlsView: View {
                                     Text("GPU").tag(ComputeUnits.cpuAndGPU)
                                     Text("Neural Engine").tag(ComputeUnits.cpuAndNeuralEngine)
                                     Text("GPU and Neural Engine").tag(ComputeUnits.all)
+                                }.pickerStyle(.radioGroup).padding(.leading)
+                                Spacer()
+                            }
+                            .onChange(of: generation.computeUnits) { units in
+                                guard let currentModel = ModelInfo.from(modelVersion: model) else { return }
+                                let variantDownloaded = isModelDownloaded(currentModel, computeUnits: units)
+                                if variantDownloaded {
+                                    updateComputeUnitsState()
+                                } else {
+                                    mustShowModelDownloadDisclaimer.toggle()
+                                }
+                            }
+                            .alert("Download Required", isPresented: $mustShowModelDownloadDisclaimer, actions: {
+                                Button("Cancel", role: .destructive) { resetComputeUnitsState() }
+                                Button("Download", role: .cancel) { updateComputeUnitsState() }
+                            }, message: {
+                                Text("This setting requires a new version of the selected model.")
+                            })
+                        } label: {
+                            HStack {
+                                Label("Advanced", systemImage: "terminal").foregroundColor(.secondary)
+                                Spacer()
+                                if disclosedAdvanced {
+                                    Button {
+                                        showAdvancedHelp.toggle()
+                                    } label: {
+                                        Image(systemName: "info.circle")
+                                    }
+                                    .buttonStyle(.plain)
+                                    .popover(isPresented: $showAdvancedHelp, arrowEdge: .trailing) {
+                                        advancedHelp($showAdvancedHelp)
+                                    }
+                                }
+                            }.foregroundColor(.secondary)
+                        }
+                    }
+                }
+            }
+            .disclosureGroupStyle(LabelToggleDisclosureGroupStyle())
+            
+            Toggle("Disable Safety Checker", isOn: $generation.disableSafety).onChange(of: generation.disableSafety) { value in
+                updateSafetyCheckerState()
+            }
+                .popover(isPresented: $mustShowSafetyCheckerDisclaimer) {
+                        VStack {
+                            Text("You have disabled the safety checker").font(.title).padding(.top)
+                            Text("""
+                                 Please, ensure that you abide \
+                                 by the conditions of the Stable Diffusion license and do not expose \
+                                 unfiltered results to the public.
+                                 """)
+                            .lineLimit(nil)
+                            .padding(.all, 5)
+                            Button {
+                                Settings.shared.safetyCheckerDisclaimerShown = true
+                                updateSafetyCheckerState()
+                            } label: {
+                                Text("I Accept").frame(maxWidth: 200)
+                            }
+                            .padding(.bottom)
+                        }
+                        .frame(minWidth: 400, idealWidth: 400, maxWidth: 400)
+                        .fixedSize()
+                    }
+            Divider()
+            
+            StatusView(pipelineState: $pipelineState)
+        }
+        .padding()
