@@ -384,3 +384,9 @@ struct ControlsView: View {
             StatusView(pipelineState: $pipelineState)
         }
         .padding()
+        .onAppear {
+            print(PipelineLoader.models)
+            modelDidChange(model: ModelInfo.from(modelVersion: model) ?? ModelInfo.v2Base)
+        }
+    }
+}
