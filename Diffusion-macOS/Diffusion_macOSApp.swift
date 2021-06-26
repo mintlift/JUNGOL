@@ -11,4 +11,8 @@ import SwiftUI
 @main
 struct Diffusion_macOSApp: App {
     var body: some Scene {
-        
+        WindowGroup {
+            ContentView()
+        }
+    }
+}
