@@ -9,4 +9,6 @@
 import SwiftUI
 
 @main
-struc
+struct Diffusion_macOSApp: App {
+    var body: some Scene {
+        
