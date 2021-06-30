@@ -9,4 +9,7 @@
 import SwiftUI
 
 struct GeneratedImageView: View {
-    @EnvironmentObject
+    @EnvironmentObject var generation: GenerationContext
+    
+    var body: some View {
+ 
