@@ -6,4 +6,7 @@
 //  See LICENSE at https://github.com/huggingface/swift-coreml-diffusers/LICENSE
 //
 
-import Swi
+import SwiftUI
+
+struct GeneratedImageView: View {
+    @EnvironmentObject
