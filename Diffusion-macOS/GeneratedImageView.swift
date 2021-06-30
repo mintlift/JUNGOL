@@ -12,4 +12,5 @@ struct GeneratedImageView: View {
     @EnvironmentObject var generation: GenerationContext
     
     var body: some View {
- 
+        switch generation.state {
+        case .startup: return AnyView(Ima
