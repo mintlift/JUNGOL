@@ -13,4 +13,6 @@ struct GeneratedImageView: View {
     
     var body: some View {
         switch generation.state {
-        case .startup: return AnyView(Ima
+        case .startup: return AnyView(Image("placeholder").resizable())
+        case .running(let progress):
+       
