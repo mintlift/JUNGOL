@@ -15,4 +15,5 @@ struct GeneratedImageView: View {
         switch generation.state {
         case .startup: return AnyView(Image("placeholder").resizable())
         case .running(let progress):
-       
+            guard let progress = progress, progress.stepCount > 0 else {
+  
