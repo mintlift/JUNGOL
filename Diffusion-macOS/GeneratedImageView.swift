@@ -20,4 +20,5 @@ struct GeneratedImageView: View {
                 return AnyView(ProgressView())
             }
             let step = Int(progress.step) + 1
-            let fracti
+            let fraction = Double(step) / Double(progress.stepCount)
+            
