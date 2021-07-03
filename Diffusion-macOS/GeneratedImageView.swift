@@ -18,4 +18,6 @@ struct GeneratedImageView: View {
             guard let progress = progress, progress.stepCount > 0 else {
                 // The first time it takes a little bit before generation starts
                 return AnyView(ProgressView())
-       
+            }
+            let step = Int(progress.step) + 1
+            let fracti
