@@ -23,4 +23,6 @@ struct GeneratedImageView: View {
             let fraction = Double(step) / Double(progress.stepCount)
             let label = "Step \(step) of \(progress.stepCount)"
             return AnyView(HStack {
-                ProgressView(label, v
+                ProgressView(label, value: fraction, total: 1).padding()
+                Button {
+             
