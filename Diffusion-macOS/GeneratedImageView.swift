@@ -25,4 +25,6 @@ struct GeneratedImageView: View {
             return AnyView(HStack {
                 ProgressView(label, value: fraction, total: 1).padding()
                 Button {
-             
+                    generation.cancelGeneration()
+                } label: {
+      
