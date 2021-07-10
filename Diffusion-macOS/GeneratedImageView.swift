@@ -27,4 +27,4 @@ struct GeneratedImageView: View {
                 Button {
                     generation.cancelGeneration()
                 } label: {
-      
+                    Image(systemName: "x.circle.fill").foregroundColor(.gra
