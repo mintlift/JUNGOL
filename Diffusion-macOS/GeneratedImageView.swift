@@ -30,3 +30,6 @@ struct GeneratedImageView: View {
                     Image(systemName: "x.circle.fill").foregroundColor(.gray)
                 }
                 .buttonStyle(.plain)
+            })
+        case .complete(_, let image, _, _):
+            guar
