@@ -32,4 +32,5 @@ struct GeneratedImageView: View {
                 .buttonStyle(.plain)
             })
         case .complete(_, let image, _, _):
-            guar
+            guard let theImage = image else {
+                return
