@@ -33,4 +33,4 @@ struct GeneratedImageView: View {
             })
         case .complete(_, let image, _, _):
             guard let theImage = image else {
-                return
+                return AnyView(Image(systemName: "exclamationmark.triangle").resiz
