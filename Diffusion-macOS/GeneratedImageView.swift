@@ -37,4 +37,5 @@ struct GeneratedImageView: View {
             }
                               
             return AnyView(Image(theImage, scale: 1, label: Text("generated"))
-                
+                .resizable()
+                .clipShape(RoundedRectangle(corner
