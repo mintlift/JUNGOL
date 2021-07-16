@@ -36,4 +36,5 @@ struct GeneratedImageView: View {
                 return AnyView(Image(systemName: "exclamationmark.triangle").resizable())
             }
                               
-            return A
+            return AnyView(Image(theImage, scale: 1, label: Text("generated"))
+                
