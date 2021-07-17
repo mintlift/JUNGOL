@@ -41,4 +41,4 @@ struct GeneratedImageView: View {
                 .clipShape(RoundedRectangle(cornerRadius: 20))
             )
         case .failed(_):
-           
+            return AnyView(Image(systemName: "exclamationmark.triangle").resiza
