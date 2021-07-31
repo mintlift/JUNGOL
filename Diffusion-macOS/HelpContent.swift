@@ -8,4 +8,8 @@
 
 import SwiftUI
 
-func helpContent(title: String, description: Text, showing: Binding<Bool>, width: Double = 400) -> some V
+func helpContent(title: String, description: Text, showing: Binding<Bool>, width: Double = 400) -> some View {
+    VStack {
+        Text(title)
+            .font(.title3)
+ 
