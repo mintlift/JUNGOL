@@ -8,4 +8,4 @@
 
 import SwiftUI
 
-func helpContent(ti
+func helpContent(title: String, description: Text, showing: Binding<Bool>, width: Double = 400) -> some V
