@@ -12,4 +12,6 @@ func helpContent(title: String, description: Text, showing: Binding<Bool>, width
     VStack {
         Text(title)
             .font(.title3)
- 
+            .padding(.top, 10)
+            .padding(.all, 5)
+        desc
