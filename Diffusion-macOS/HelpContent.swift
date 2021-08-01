@@ -14,4 +14,7 @@ func helpContent(title: String, description: Text, showing: Binding<Bool>, width
             .font(.title3)
             .padding(.top, 10)
             .padding(.all, 5)
-        desc
+        description
+        .lineLimit(nil)
+        .padding(.bottom, 5)
+        .padding([.leading, .t
