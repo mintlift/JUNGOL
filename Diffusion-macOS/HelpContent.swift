@@ -28,4 +28,4 @@ func helpContent(title: String, description: Text, showing: Binding<Bool>, width
     .frame(minWidth: width, idealWidth: width, maxWidth: width)
 }
 
-func helpContent(title: St
+func helpContent(title: String, description: String, showing: Binding<Bool>, width: Double = 400) ->
