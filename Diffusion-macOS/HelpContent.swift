@@ -17,4 +17,6 @@ func helpContent(title: String, description: Text, showing: Binding<Bool>, width
         description
         .lineLimit(nil)
         .padding(.bottom, 5)
-        .padding([.leading, .t
+        .padding([.leading, .trailing], 15)
+        Button {
+            showing.wrappedValu
