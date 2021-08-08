@@ -21,4 +21,8 @@ func helpContent(title: String, description: Text, showing: Binding<Bool>, width
         Button {
             showing.wrappedValue.toggle()
         } label: {
-            Text("Dismiss").frame(maxWid
+            Text("Dismiss").frame(maxWidth: 200)
+        }
+        .padding(.bottom)
+    }
+    .frame(mi
