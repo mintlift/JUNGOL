@@ -25,4 +25,7 @@ func helpContent(title: String, description: Text, showing: Binding<Bool>, width
         }
         .padding(.bottom)
     }
-    .frame(mi
+    .frame(minWidth: width, idealWidth: width, maxWidth: width)
+}
+
+func helpContent(title: St
