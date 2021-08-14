@@ -32,4 +32,4 @@ func helpContent(title: String, description: String, showing: Binding<Bool>, wid
     helpContent(title: title, description: Text(description), showing: showing)
 }
 
-func helpContent(t
+func helpContent(title: String, description: AttributedString, showing: Binding<Bool
