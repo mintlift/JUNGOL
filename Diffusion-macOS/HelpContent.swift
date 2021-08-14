@@ -32,4 +32,5 @@ func helpContent(title: String, description: String, showing: Binding<Bool>, wid
     helpContent(title: title, description: Text(description), showing: showing)
 }
 
-func helpContent(title: String, description: AttributedString, showing: Binding<Bool
+func helpContent(title: String, description: AttributedString, showing: Binding<Bool>, width: Double = 400) -> some View {
+    helpContent(title
