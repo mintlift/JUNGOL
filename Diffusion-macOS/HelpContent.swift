@@ -37,4 +37,5 @@ func helpContent(title: String, description: AttributedString, showing: Binding<
 }
 
 
-func
+func modelsHelp(_ showing: Binding<Bool>) -> some View {
+    let description = try! 
