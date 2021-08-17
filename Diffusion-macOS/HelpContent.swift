@@ -38,4 +38,6 @@ func helpContent(title: String, description: AttributedString, showing: Binding<
 
 
 func modelsHelp(_ showing: Binding<Bool>) -> some View {
-    let description = try! 
+    let description = try! AttributedString(markdown:
+        """
+        Diffusers launches with a
