@@ -40,4 +40,4 @@ func helpContent(title: String, description: AttributedString, showing: Binding<
 func modelsHelp(_ showing: Binding<Bool>) -> some View {
     let description = try! AttributedString(markdown:
         """
-        Diffusers launches with a
+        Diffusers launches with a set of 5 models that can be downloaded from the Huggi
