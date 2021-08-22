@@ -44,4 +44,5 @@ func modelsHelp(_ showing: Binding<Bool>) -> some View {
         
         **[Stable Diffusion 1.4](https://huggingface.co/CompVis/stable-diffusion-v1-4)**
           
-        This is the original Stable Diffusion model that changed the landscape of AI image generation. For more details, visit the [model card](htt
+        This is the original Stable Diffusion model that changed the landscape of AI image generation. For more details, visit the [model card](https://huggingface.co/CompVis/stable-diffusion-v1-4) or click on the title above.
+    
