@@ -42,4 +42,6 @@ func modelsHelp(_ showing: Binding<Bool>) -> some View {
         """
         Diffusers launches with a set of 5 models that can be downloaded from the Hugging Face Hub:
         
-        **[Stable Diffusion 1.4](ht
+        **[Stable Diffusion 1.4](https://huggingface.co/CompVis/stable-diffusion-v1-4)**
+          
+        T
