@@ -48,4 +48,4 @@ func modelsHelp(_ showing: Binding<Bool>) -> some View {
         
         **[Stable Diffusion 1.5](https://huggingface.co/runwayml/stable-diffusion-v1-5)**
         
-        Same architecture as 1
+        Same architecture as 1.4, but trained on additional images with a focus on aesthetics
