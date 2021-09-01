@@ -50,4 +50,6 @@ func modelsHelp(_ showing: Binding<Bool>) -> some View {
         
         Same architecture as 1.4, but trained on additional images with a focus on aesthetics.
         
-        **[Stable Diffusion 2](https://huggingface.co/StabilityA
+        **[Stable Diffusion 2](https://huggingface.co/StabilityAI/stable-diffusion-2-base)**
+        
+        Improved model, h
