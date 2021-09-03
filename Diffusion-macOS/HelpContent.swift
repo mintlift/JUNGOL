@@ -52,4 +52,4 @@ func modelsHelp(_ showing: Binding<Bool>) -> some View {
         
         **[Stable Diffusion 2](https://huggingface.co/StabilityAI/stable-diffusion-2-base)**
         
-        Improved model, h
+        Improved model, heavily retrained on millions of additional images. This version co
