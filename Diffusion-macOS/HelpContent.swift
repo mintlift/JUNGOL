@@ -52,4 +52,6 @@ func modelsHelp(_ showing: Binding<Bool>) -> some View {
         
         **[Stable Diffusion 2](https://huggingface.co/StabilityAI/stable-diffusion-2-base)**
         
-        Improved model, heavily retrained on millions of additional images. This version corresponds to the [`stable-diffusion-2-base`](https://huggingface.co/StabilityAI/stable-diffusion-2-base) version of the model (trained o
+        Improved model, heavily retrained on millions of additional images. This version corresponds to the [`stable-diffusion-2-base`](https://huggingface.co/StabilityAI/stable-diffusion-2-base) version of the model (trained on 512 x 512 images).
+        
+        **[Stable Diffusion 2.1
