@@ -56,4 +56,4 @@ func modelsHelp(_ showing: Binding<Bool>) -> some View {
         
         **[Stable Diffusion 2.1](https://huggingface.co/stabilityai/stable-diffusion-2-1-base)**
         
-        
+        The last reference in the Stable Diffusion family. Works great with _
