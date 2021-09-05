@@ -58,4 +58,6 @@ func modelsHelp(_ showing: Binding<Bool>) -> some View {
         
         The last reference in the Stable Diffusion family. Works great with _negative prompts_.
         
-        **[OFA small v0](https://huggingface.c
+        **[OFA small v0](https://huggingface.co/OFA-Sys/small-stable-diffusion-v0)**
+        
+        This 
