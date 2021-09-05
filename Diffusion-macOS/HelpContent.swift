@@ -60,4 +60,4 @@ func modelsHelp(_ showing: Binding<Bool>) -> some View {
         
         **[OFA small v0](https://huggingface.co/OFA-Sys/small-stable-diffusion-v0)**
         
-        This is a special so-called _distilled_ model, half the s
+        This is a special so-called _distilled_ model, half the size of the others. It runs faster and requires less RAM, try it out if you find g
