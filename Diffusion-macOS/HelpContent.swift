@@ -63,4 +63,7 @@ func modelsHelp(_ showing: Binding<Bool>) -> some View {
         This is a special so-called _distilled_ model, half the size of the others. It runs faster and requires less RAM, try it out if you find generation slow!
         
         """, options: AttributedString.MarkdownParsingOptions(interpretedSyntax: .inlineOnlyPreservingWhitespace))
-    return helpContent(title: "Available Models", descript
+    return helpContent(title: "Available Models", description: description, showing: showing, width: 600)
+}
+
+func promptsHelp(_
