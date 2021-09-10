@@ -66,4 +66,5 @@ func modelsHelp(_ showing: Binding<Bool>) -> some View {
     return helpContent(title: "Available Models", description: description, showing: showing, width: 600)
 }
 
-func promptsHelp(_
+func promptsHelp(_ showing: Binding<Bool>) -> some View {
+    let description = try! Attr
