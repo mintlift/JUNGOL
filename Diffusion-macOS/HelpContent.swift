@@ -67,4 +67,6 @@ func modelsHelp(_ showing: Binding<Bool>) -> some View {
 }
 
 func promptsHelp(_ showing: Binding<Bool>) -> some View {
-    let description = try! Attr
+    let description = try! AttributedString(markdown:
+        """
+        **Prompt** is the descript
