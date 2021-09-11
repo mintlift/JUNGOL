@@ -69,4 +69,4 @@ func modelsHelp(_ showing: Binding<Bool>) -> some View {
 func promptsHelp(_ showing: Binding<Bool>) -> some View {
     let description = try! AttributedString(markdown:
         """
-        **Prompt** is the descript
+        **Prompt** is the description of what you want, and **negative prompt** is what you _don't want_.
