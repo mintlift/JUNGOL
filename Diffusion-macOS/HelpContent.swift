@@ -71,4 +71,6 @@ func promptsHelp(_ showing: Binding<Bool>) -> some View {
         """
         **Prompt** is the description of what you want, and **negative prompt** is what you _don't want_.
         
-        Use the negative prompt to tweak a previous generation (by removing unwanted items), or to provide hints for t
+        Use the negative prompt to tweak a previous generation (by removing unwanted items), or to provide hints for the model.
+        
+        Many people like to use negative prompt
