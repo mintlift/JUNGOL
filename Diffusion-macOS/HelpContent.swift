@@ -73,4 +73,5 @@ func promptsHelp(_ showing: Binding<Bool>) -> some View {
         
         Use the negative prompt to tweak a previous generation (by removing unwanted items), or to provide hints for the model.
         
-        Many people like to use negative prompt
+        Many people like to use negative prompts such as "ugly, bad quality" to make the model try harder. \
+        Or c
