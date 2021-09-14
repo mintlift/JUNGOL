@@ -74,4 +74,6 @@ func promptsHelp(_ showing: Binding<Bool>) -> some View {
         Use the negative prompt to tweak a previous generation (by removing unwanted items), or to provide hints for the model.
         
         Many people like to use negative prompts such as "ugly, bad quality" to make the model try harder. \
-        Or consider excluding terms like "3d" or "realistic" if you're after particular drawing
+        Or consider excluding terms like "3d" or "realistic" if you're after particular drawing styles.
+        
+        """, options: AttributedStrin
