@@ -76,4 +76,5 @@ func promptsHelp(_ showing: Binding<Bool>) -> some View {
         Many people like to use negative prompts such as "ugly, bad quality" to make the model try harder. \
         Or consider excluding terms like "3d" or "realistic" if you're after particular drawing styles.
         
-        """, options: AttributedString.MarkdownParsingOptions(interpretedSyntax: .inlineO
+        """, options: AttributedString.MarkdownParsingOptions(interpretedSyntax: .inlineOnlyPreservingWhitespace))
+    return helpContent(title
