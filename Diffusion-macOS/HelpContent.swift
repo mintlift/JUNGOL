@@ -77,4 +77,4 @@ func promptsHelp(_ showing: Binding<Bool>) -> some View {
         Or consider excluding terms like "3d" or "realistic" if you're after particular drawing styles.
         
         """, options: AttributedString.MarkdownParsingOptions(interpretedSyntax: .inlineOnlyPreservingWhitespace))
-    return helpContent(title
+    return helpContent(title: "Prompt and Negative Prompt", description: description, show
