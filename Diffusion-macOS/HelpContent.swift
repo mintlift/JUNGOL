@@ -85,4 +85,5 @@ func guidanceHelp(_ showing: Binding<Bool>) -> some View {
         """
         Indicates how much the image should resemble the prompt.
         
-        Low values produce more varied results, while excessively high 
+        Low values produce more varied results, while excessively high ones \
+        may result in image artifacts such as posterizatio
