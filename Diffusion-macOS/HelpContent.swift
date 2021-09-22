@@ -80,4 +80,7 @@ func promptsHelp(_ showing: Binding<Bool>) -> some View {
     return helpContent(title: "Prompt and Negative Prompt", description: description, showing: showing, width: 600)
 }
 
-func guidanceHelp(_ showing: Binding<Bool>) -> some 
+func guidanceHelp(_ showing: Binding<Bool>) -> some View {
+    let description =
+        """
+        Indicates how much the im
