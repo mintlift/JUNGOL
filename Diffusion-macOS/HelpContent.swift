@@ -83,4 +83,6 @@ func promptsHelp(_ showing: Binding<Bool>) -> some View {
 func guidanceHelp(_ showing: Binding<Bool>) -> some View {
     let description =
         """
-        Indicates how much the im
+        Indicates how much the image should resemble the prompt.
+        
+        Low value
