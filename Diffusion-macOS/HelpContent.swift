@@ -88,4 +88,5 @@ func guidanceHelp(_ showing: Binding<Bool>) -> some View {
         Low values produce more varied results, while excessively high ones \
         may result in image artifacts such as posterization.
         
-        Values between 7 and 10 are usually goo
+        Values between 7 and 10 are usually good choices, but they affect \
+        differently to different mode
