@@ -93,4 +93,7 @@ func guidanceHelp(_ showing: Binding<Bool>) -> some View {
         
         Feel free to experiment!
         """
-    return helpContent(title: "Guidance Scale", description: description, showing: show
+    return helpContent(title: "Guidance Scale", description: description, showing: showing)
+}
+
+func stepsHelp(_ showing: Binding<Bool>) -> some Vie
