@@ -101,4 +101,5 @@ func stepsHelp(_ showing: Binding<Bool>) -> some View {
          """
          How many times to go through the diffusion process.
 
-         Quality increases the more 
+         Quality increases the more steps you choose, but marginal improvements \
+         get incr
