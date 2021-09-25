@@ -99,4 +99,6 @@ func guidanceHelp(_ showing: Binding<Bool>) -> some View {
 func stepsHelp(_ showing: Binding<Bool>) -> some View {
     let description =
          """
-         How many times 
+         How many times to go through the diffusion process.
+
+         Quality increases the more 
