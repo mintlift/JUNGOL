@@ -105,4 +105,6 @@ func stepsHelp(_ showing: Binding<Bool>) -> some View {
          get increasingly smaller.
 
          🧨 Diffusers currently uses the super efficient DPM Solver scheduler, \
-         which produces great result
+         which produces great results in just 20 or 25 steps 🤯
+         """
+    return helpContent(ti
