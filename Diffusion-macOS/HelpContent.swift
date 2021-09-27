@@ -104,4 +104,5 @@ func stepsHelp(_ showing: Binding<Bool>) -> some View {
          Quality increases the more steps you choose, but marginal improvements \
          get increasingly smaller.
 
-         🧨 Diffusers currently uses the super effici
+         🧨 Diffusers currently uses the super efficient DPM Solver scheduler, \
+         which produces great result
