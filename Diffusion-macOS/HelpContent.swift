@@ -113,4 +113,6 @@ func stepsHelp(_ showing: Binding<Bool>) -> some View {
 func seedHelp(_ showing: Binding<Bool>) -> some View {
     let description =
          """
-         This is a 
+         This is a number that allows you to reproduce a previous generation.
+         
+         Use it
