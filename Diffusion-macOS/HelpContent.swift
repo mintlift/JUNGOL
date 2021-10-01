@@ -107,4 +107,7 @@ func stepsHelp(_ showing: Binding<Bool>) -> some View {
          🧨 Diffusers currently uses the super efficient DPM Solver scheduler, \
          which produces great results in just 20 or 25 steps 🤯
          """
-    return helpContent(title: "Inference Steps", description: description, showing: showi
+    return helpContent(title: "Inference Steps", description: description, showing: showing)
+}
+
+func seedHelp(_ showing: Binding<Bool>) -> some Vi
