@@ -110,4 +110,7 @@ func stepsHelp(_ showing: Binding<Bool>) -> some View {
     return helpContent(title: "Inference Steps", description: description, showing: showing)
 }
 
-func seedHelp(_ showing: Binding<Bool>) -> some Vi
+func seedHelp(_ showing: Binding<Bool>) -> some View {
+    let description =
+         """
+         This is a 
