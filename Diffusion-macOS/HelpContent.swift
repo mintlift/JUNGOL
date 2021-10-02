@@ -115,4 +115,5 @@ func seedHelp(_ showing: Binding<Bool>) -> some View {
          """
          This is a number that allows you to reproduce a previous generation.
          
-         Use it like this: select a seed and write a prompt, then generate an i
+         Use it like this: select a seed and write a prompt, then generate an image. \
+         Next, maybe add a negative prompt or tweak the
