@@ -117,4 +117,6 @@ func seedHelp(_ showing: Binding<Bool>) -> some View {
          
          Use it like this: select a seed and write a prompt, then generate an image. \
          Next, maybe add a negative prompt or tweak the prompt slightly, and see how the result changes. \
-         Rinse and
+         Rinse and repeat until you are satisfied, or select a new seed to start over.
+
+ 
