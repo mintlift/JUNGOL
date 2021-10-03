@@ -120,4 +120,5 @@ func seedHelp(_ showing: Binding<Bool>) -> some View {
          Rinse and repeat until you are satisfied, or select a new seed to start over.
 
          If you select -1, a random seed will be chosen for you.
-     
+         """
+    return helpContent(title: "Generation Seed",
