@@ -121,4 +121,7 @@ func seedHelp(_ showing: Binding<Bool>) -> some View {
 
          If you select -1, a random seed will be chosen for you.
          """
-    return helpContent(title: "Generation Seed",
+    return helpContent(title: "Generation Seed", description: description, showing: showing)
+}
+
+func advanced
