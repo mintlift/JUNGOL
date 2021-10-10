@@ -124,4 +124,5 @@ func seedHelp(_ showing: Binding<Bool>) -> some View {
     return helpContent(title: "Generation Seed", description: description, showing: showing)
 }
 
-func advanced
+func advancedHelp(_ showing: Binding<Bool>) -> some View {
+    let description 
