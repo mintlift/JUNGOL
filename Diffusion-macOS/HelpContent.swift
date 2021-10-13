@@ -127,4 +127,6 @@ func seedHelp(_ showing: Binding<Bool>) -> some View {
 func advancedHelp(_ showing: Binding<Bool>) -> some View {
     let description =
          """
-         This section allows you to try different op
+         This section allows you to try different optimization settings.
+         
+         Diffusers will try to sel
