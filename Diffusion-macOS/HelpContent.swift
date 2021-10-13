@@ -125,4 +125,6 @@ func seedHelp(_ showing: Binding<Bool>) -> some View {
 }
 
 func advancedHelp(_ showing: Binding<Bool>) -> some View {
-    let description 
+    let description =
+         """
+         This section allows you to try different op
