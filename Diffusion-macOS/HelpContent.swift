@@ -130,4 +130,4 @@ func advancedHelp(_ showing: Binding<Bool>) -> some View {
          This section allows you to try different optimization settings.
          
          Diffusers will try to select the best configuration for you, but it may not always be optimal \
-     
+         for your computer. You can experiment with these 
