@@ -131,4 +131,6 @@ func advancedHelp(_ showing: Binding<Bool>) -> some View {
          
          Diffusers will try to select the best configuration for you, but it may not always be optimal \
          for your computer. You can experiment with these settings to verify the combination that works faster \
-       
+         in your system.
+         
+         Please, note t
