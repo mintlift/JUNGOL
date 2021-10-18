@@ -133,4 +133,4 @@ func advancedHelp(_ showing: Binding<Bool>) -> some View {
          for your computer. You can experiment with these settings to verify the combination that works faster \
          in your system.
          
-         Please, note t
+         Please, note that these settings may trigger downloads of add
