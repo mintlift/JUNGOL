@@ -135,4 +135,4 @@ func advancedHelp(_ showing: Binding<Bool>) -> some View {
          
          Please, note that these settings may trigger downloads of additional model variants.
          """
-    return helpContent(titl
+    return helpContent(title: "Advanced Model Settings", description: descriptio
