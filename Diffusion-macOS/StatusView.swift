@@ -74,3 +74,66 @@ struct StatusView: View {
             let fraction = Double(step) / Double(progress.stepCount)
             return HStack {
                 Text("Generating \(Int(round(100*fraction)))%")
+                Spacer()
+            }
+        case .complete(_, let image, let lastSeed, let interval):
+            guard let _ = image else {
+                return HStack {
+                    Text("Safety checker triggered, please try a different prompt or seed.")
+                    Spacer()
+                }
+            }
+                              
+            return HStack {
+                let intervalString = String(format: "Time: %.1fs", interval ?? 0)
+                Text(intervalString)
+                Spacer()
+                if generation.seed != Double(lastSeed) {
+                    Text("Seed: \(lastSeed)")
+                    Button("Set") {
+                        generation.seed = Double(lastSeed)
+                    }
+                }
+            }.frame(maxHeight: 25)
+        case .failed(let error):
+            return errorWithDetails("Generation error", error: error)
+        case .userCanceled:
+            return HStack {
+                Text("Generation canceled.")
+                Spacer()
+            }
+        }
+    }
+    
+    var body: some View {
+        switch pipelineState.wrappedValue {
+        case .downloading(let progress):
+            ProgressView("Downloading…", value: progress*100, total: 110).padding()
+        case .uncompressing:
+            ProgressView("Uncompressing…", value: 100, total: 110).padding()
+        case .loading:
+            ProgressView("Loading…", value: 105, total: 110).padding()
+        case .ready:
+            VStack {
+                Button {
+                    submit()
+                } label: {
+                    Text("Generate")
+                        .frame(maxWidth: .infinity)
+                        .frame(height: 50)
+                }
+                .buttonStyle(.borderedProminent)
+                
+                AnyView(generationStatusView())
+            }
+        case .failed(let error):
+            AnyView(errorWithDetails("Pipeline loading error", error: error))
+        }
+    }
+}
+
+struct StatusView_Previews: PreviewProvider {
+    static var previews: some View {
+        StatusView(pipelineState: .constant(.downloading(0.2)))
+    }
+}
