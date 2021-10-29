@@ -139,3 +139,65 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EBB5BA5129425B07003A2A5B /* Pipeline */ = {
+			isa = PBXGroup;
+			children = (
+				EBE75601293E91E200806B32 /* Pipeline.swift */,
+				EBB5BA5229425BEE003A2A5B /* PipelineLoader.swift */,
+			);
+			path = Pipeline;
+			sourceTree = "<group>";
+		};
+		EBE755BC293E37DD00806B32 = {
+			isa = PBXGroup;
+			children = (
+				EBE3FF4A295DFE2400E921AA /* common.xcconfig */,
+				EBDD7DBA2976F03600C1C4B2 /* debug.xcconfig */,
+				EBE4438729488DCA00CDA605 /* README.md */,
+				EBE443892948953600CDA605 /* LICENSE */,
+				EBE755FF293E910800806B32 /* Packages */,
+				EBE755C7293E37DD00806B32 /* Diffusion */,
+				F15520222971093300DC009B /* Diffusion-macOS */,
+				EBE755D9293E37DE00806B32 /* DiffusionTests */,
+				EBE755E3293E37DE00806B32 /* DiffusionUITests */,
+				EBE755C6293E37DD00806B32 /* Products */,
+				EBE75603293E93BB00806B32 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EBE755C6293E37DD00806B32 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EBE755C5293E37DD00806B32 /* Diffusion.app */,
+				EBE755D6293E37DE00806B32 /* DiffusionTests.xctest */,
+				EBE755E0293E37DE00806B32 /* DiffusionUITests.xctest */,
+				F15520212971093300DC009B /* Diffusers.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EBE755C7293E37DD00806B32 /* Diffusion */ = {
+			isa = PBXGroup;
+			children = (
+				EB33A51E2954E1BC00B16357 /* Info.plist */,
+				EBB5BA5129425B07003A2A5B /* Pipeline */,
+				EBE7560A29411A5E00806B32 /* Views */,
+				EBB5BA5929426E06003A2A5B /* Downloader.swift */,
+				EBE755C8293E37DD00806B32 /* DiffusionApp.swift */,
+				EBDD7DB22973200200C1C4B2 /* Utils.swift */,
+				EBE3FF4B295E1EFE00E921AA /* ModelInfo.swift */,
+				EBDD7DB72976AAFE00C1C4B2 /* State.swift */,
+				EBE755CC293E37DD00806B32 /* Assets.xcassets */,
+				EBE755CE293E37DD00806B32 /* Diffusion.entitlements */,
+				EBE755CF293E37DD00806B32 /* Preview Content */,
+			);
+			path = Diffusion;
+			sourceTree = "<group>";
+		};
+		EBE755CF293E37DD00806B32 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				EBE755D0293E37DD00806B32 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
