@@ -201,3 +201,70 @@
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
+		};
+		EBE755D9293E37DE00806B32 /* DiffusionTests */ = {
+			isa = PBXGroup;
+			children = (
+				EBE755DA293E37DE00806B32 /* DiffusionTests.swift */,
+			);
+			path = DiffusionTests;
+			sourceTree = "<group>";
+		};
+		EBE755E3293E37DE00806B32 /* DiffusionUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EBE755E4293E37DE00806B32 /* DiffusionUITests.swift */,
+				EBE755E6293E37DE00806B32 /* DiffusionUITestsLaunchTests.swift */,
+			);
+			path = DiffusionUITests;
+			sourceTree = "<group>";
+		};
+		EBE755FF293E910800806B32 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		EBE75603293E93BB00806B32 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EBE7560A29411A5E00806B32 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EBE756082941178600806B32 /* Loading.swift */,
+				EBE755CA293E37DD00806B32 /* TextToImage.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F15520222971093300DC009B /* Diffusion-macOS */ = {
+			isa = PBXGroup;
+			children = (
+				EB560F0529A4090D00C0F8B8 /* Info.plist */,
+				F15520232971093300DC009B /* Diffusion_macOSApp.swift */,
+				F15520252971093300DC009B /* ContentView.swift */,
+				EBDD7DBB2977FFB300C1C4B2 /* GeneratedImageView.swift */,
+				F1552030297109C300DC009B /* ControlsView.swift */,
+				F155203329710B3600DC009B /* StatusView.swift */,
+				EB067F862992E561004D1AD9 /* HelpContent.swift */,
+				EB560F0329A3C20800C0F8B8 /* Capabilities.swift */,
+				F155202C2971093400DC009B /* Diffusion_macOS.entitlements */,
+				F15520292971093400DC009B /* Preview Content */,
+			);
+			path = "Diffusion-macOS";
+			sourceTree = "<group>";
+		};
+		F15520292971093400DC009B /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F155202A2971093400DC009B /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
