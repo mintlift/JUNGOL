@@ -318,3 +318,64 @@
 				EBE755DD293E37DE00806B32 /* Frameworks */,
 				EBE755DE293E37DE00806B32 /* Resources */,
 			);
+			buildRules = (
+			);
+			dependencies = (
+				EBE755E2293E37DE00806B32 /* PBXTargetDependency */,
+			);
+			name = DiffusionUITests;
+			productName = DiffusionUITests;
+			productReference = EBE755E0293E37DE00806B32 /* DiffusionUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		F15520202971093300DC009B /* Diffusion-macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F155202F2971093400DC009B /* Build configuration list for PBXNativeTarget "Diffusion-macOS" */;
+			buildPhases = (
+				EB7FE72529954BFF009056BD /* ShellScript */,
+				F155201D2971093300DC009B /* Sources */,
+				F155201E2971093300DC009B /* Frameworks */,
+				F155201F2971093300DC009B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Diffusion-macOS";
+			packageProductDependencies = (
+				F155203B297118E700DC009B /* CompactSlider */,
+				EBDD7DAC29731FB300C1C4B2 /* Path */,
+				EBDD7DAE29731FB300C1C4B2 /* ZIPFoundation */,
+				EBDD7DB029731FB300C1C4B2 /* StableDiffusion */,
+			);
+			productName = "Diffusion-macOS";
+			productReference = F15520212971093300DC009B /* Diffusers.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EBE755BD293E37DD00806B32 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					EBE755C4293E37DD00806B32 = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					EBE755D5293E37DE00806B32 = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = EBE755C4293E37DD00806B32;
+					};
+					EBE755DF293E37DE00806B32 = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = EBE755C4293E37DD00806B32;
+					};
+					F15520202971093300DC009B = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = EBE755C0293E37DD00806B32 /* Build configuration list for PBXProject "Diffusion" */;
