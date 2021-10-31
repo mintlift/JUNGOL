@@ -379,3 +379,77 @@
 				};
 			};
 			buildConfigurationList = EBE755C0293E37DD00806B32 /* Build configuration list for PBXProject "Diffusion" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EBE755BC293E37DD00806B32;
+			packageReferences = (
+				EBB5BA5629425E17003A2A5B /* XCRemoteSwiftPackageReference "Path.swift" */,
+				EBB5BA5B294504DE003A2A5B /* XCRemoteSwiftPackageReference "ZIPFoundation" */,
+				EB33A51B2954D89F00B16357 /* XCRemoteSwiftPackageReference "ml-stable-diffusion" */,
+				F155203A297118E600DC009B /* XCRemoteSwiftPackageReference "CompactSlider" */,
+			);
+			productRefGroup = EBE755C6293E37DD00806B32 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EBE755C4293E37DD00806B32 /* Diffusion */,
+				EBE755D5293E37DE00806B32 /* DiffusionTests */,
+				EBE755DF293E37DE00806B32 /* DiffusionUITests */,
+				F15520202971093300DC009B /* Diffusion-macOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EBE755C3293E37DD00806B32 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBE755D1293E37DD00806B32 /* Preview Assets.xcassets in Resources */,
+				EBE755CD293E37DD00806B32 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBE755D4293E37DE00806B32 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBE755DE293E37DE00806B32 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F155201F2971093300DC009B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBDD7DC02978642200C1C4B2 /* Assets.xcassets in Resources */,
+				F155202B2971093400DC009B /* Preview Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		EB7FE72529954BFF009056BD /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 12;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
