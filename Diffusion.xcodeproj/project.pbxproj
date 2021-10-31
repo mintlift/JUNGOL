@@ -268,3 +268,53 @@
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EBE755C4293E37DD00806B32 /* Diffusion */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EBE755EA293E37DE00806B32 /* Build configuration list for PBXNativeTarget "Diffusion" */;
+			buildPhases = (
+				EBE755C1293E37DD00806B32 /* Sources */,
+				EBE755C2293E37DD00806B32 /* Frameworks */,
+				EBE755C3293E37DD00806B32 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Diffusion;
+			packageProductDependencies = (
+				EBB5BA5729425E17003A2A5B /* Path */,
+				EBB5BA5C294504DE003A2A5B /* ZIPFoundation */,
+				EB33A51C2954D89F00B16357 /* StableDiffusion */,
+			);
+			productName = Diffusion;
+			productReference = EBE755C5293E37DD00806B32 /* Diffusion.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EBE755D5293E37DE00806B32 /* DiffusionTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EBE755ED293E37DE00806B32 /* Build configuration list for PBXNativeTarget "DiffusionTests" */;
+			buildPhases = (
+				EBE755D2293E37DE00806B32 /* Sources */,
+				EBE755D3293E37DE00806B32 /* Frameworks */,
+				EBE755D4293E37DE00806B32 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EBE755D8293E37DE00806B32 /* PBXTargetDependency */,
+			);
+			name = DiffusionTests;
+			productName = DiffusionTests;
+			productReference = EBE755D6293E37DE00806B32 /* DiffusionTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EBE755DF293E37DE00806B32 /* DiffusionUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EBE755F0293E37DE00806B32 /* Build configuration list for PBXNativeTarget "DiffusionUITests" */;
+			buildPhases = (
+				EBE755DC293E37DE00806B32 /* Sources */,
+				EBE755DD293E37DE00806B32 /* Frameworks */,
+				EBE755DE293E37DE00806B32 /* Resources */,
+			);
