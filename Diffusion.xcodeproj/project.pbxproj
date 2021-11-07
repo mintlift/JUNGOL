@@ -453,3 +453,72 @@
 			);
 			outputFileListPaths = (
 			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [ \"$CONFIGURATION\" != \"Debug\" ]\nthen    \n    version=`date +%Y%m%d.%H%M%S`\n    CONFIG_FILE=${SRCROOT}/config/common.xcconfig\n    sed -e 's/^CURRENT_PROJECT_VERSION.*/CURRENT_PROJECT_VERSION = '\"$version\"'/' ${CONFIG_FILE} > ${CONFIG_FILE}.tmp\n    [[ -s ${CONFIG_FILE}.tmp ]] && {\n        mv ${CONFIG_FILE}.tmp ${CONFIG_FILE}\n    }\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EBE755C1293E37DD00806B32 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBE75602293E91E200806B32 /* Pipeline.swift in Sources */,
+				EBE755CB293E37DD00806B32 /* TextToImage.swift in Sources */,
+				EBB5BA5A29426E06003A2A5B /* Downloader.swift in Sources */,
+				EBE3FF4C295E1EFE00E921AA /* ModelInfo.swift in Sources */,
+				EBE756092941178600806B32 /* Loading.swift in Sources */,
+				EBDD7DB82976AAFE00C1C4B2 /* State.swift in Sources */,
+				EBB5BA5329425BEE003A2A5B /* PipelineLoader.swift in Sources */,
+				EBE755C9293E37DD00806B32 /* DiffusionApp.swift in Sources */,
+				EBDD7DB32973200200C1C4B2 /* Utils.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBE755D2293E37DE00806B32 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBE755DB293E37DE00806B32 /* DiffusionTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBE755DC293E37DE00806B32 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBE755E7293E37DE00806B32 /* DiffusionUITestsLaunchTests.swift in Sources */,
+				EBE755E5293E37DE00806B32 /* DiffusionUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F155201D2971093300DC009B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBDD7DAB29731F7500C1C4B2 /* PipelineLoader.swift in Sources */,
+				EBDD7DAA29731F6C00C1C4B2 /* Pipeline.swift in Sources */,
+				F15520262971093300DC009B /* ContentView.swift in Sources */,
+				EBDD7DB92976AAFE00C1C4B2 /* State.swift in Sources */,
+				EB067F872992E561004D1AD9 /* HelpContent.swift in Sources */,
+				EBDD7DB42973200200C1C4B2 /* Utils.swift in Sources */,
+				F1552031297109C300DC009B /* ControlsView.swift in Sources */,
+				EBDD7DB62973206600C1C4B2 /* Downloader.swift in Sources */,
+				F155203429710B3600DC009B /* StatusView.swift in Sources */,
+				EB560F0429A3C20800C0F8B8 /* Capabilities.swift in Sources */,
+				F15520242971093300DC009B /* Diffusion_macOSApp.swift in Sources */,
+				EBDD7DB52973201800C1C4B2 /* ModelInfo.swift in Sources */,
+				EBDD7DBD2977FFB300C1C4B2 /* GeneratedImageView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EBE755D8293E37DE00806B32 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EBE755C4293E37DD00806B32 /* Diffusion */;
+			targetProxy = EBE755D7293E37DE00806B32 /* PBXContainerItemProxy */;
