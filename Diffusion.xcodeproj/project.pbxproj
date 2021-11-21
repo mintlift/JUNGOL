@@ -853,3 +853,70 @@
 				INFOPLIST_FILE = "Diffusion-macOS/Info.plist";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.huggingface.Diffusers;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EBE755C0293E37DD00806B32 /* Build configuration list for PBXProject "Diffusion" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBE755E8293E37DE00806B32 /* Debug */,
+				EBE755E9293E37DE00806B32 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EBE755EA293E37DE00806B32 /* Build configuration list for PBXNativeTarget "Diffusion" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBE755EB293E37DE00806B32 /* Debug */,
+				EBE755EC293E37DE00806B32 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EBE755ED293E37DE00806B32 /* Build configuration list for PBXNativeTarget "DiffusionTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBE755EE293E37DE00806B32 /* Debug */,
+				EBE755EF293E37DE00806B32 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EBE755F0293E37DE00806B32 /* Build configuration list for PBXNativeTarget "DiffusionUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBE755F1293E37DE00806B32 /* Debug */,
+				EBE755F2293E37DE00806B32 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F155202F2971093400DC009B /* Build configuration list for PBXNativeTarget "Diffusion-macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F155202D2971093400DC009B /* Debug */,
+				F155202E2971093400DC009B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EB33A51B2954D89F00B16357 /* XCRemoteSwiftPackageReference "ml-stable-diffusion" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/ml-stable-diffusion";
+			requirement = {
