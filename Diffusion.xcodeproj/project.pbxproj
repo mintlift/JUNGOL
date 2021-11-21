@@ -920,3 +920,73 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/apple/ml-stable-diffusion";
 			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		EBB5BA5629425E17003A2A5B /* XCRemoteSwiftPackageReference "Path.swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mxcl/Path.swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		EBB5BA5B294504DE003A2A5B /* XCRemoteSwiftPackageReference "ZIPFoundation" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/weichsel/ZIPFoundation.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.9.9;
+			};
+		};
+		F155203A297118E600DC009B /* XCRemoteSwiftPackageReference "CompactSlider" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/buh/CompactSlider.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EB33A51C2954D89F00B16357 /* StableDiffusion */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EB33A51B2954D89F00B16357 /* XCRemoteSwiftPackageReference "ml-stable-diffusion" */;
+			productName = StableDiffusion;
+		};
+		EBB5BA5729425E17003A2A5B /* Path */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EBB5BA5629425E17003A2A5B /* XCRemoteSwiftPackageReference "Path.swift" */;
+			productName = Path;
+		};
+		EBB5BA5C294504DE003A2A5B /* ZIPFoundation */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EBB5BA5B294504DE003A2A5B /* XCRemoteSwiftPackageReference "ZIPFoundation" */;
+			productName = ZIPFoundation;
+		};
+		EBDD7DAC29731FB300C1C4B2 /* Path */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EBB5BA5629425E17003A2A5B /* XCRemoteSwiftPackageReference "Path.swift" */;
+			productName = Path;
+		};
+		EBDD7DAE29731FB300C1C4B2 /* ZIPFoundation */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EBB5BA5B294504DE003A2A5B /* XCRemoteSwiftPackageReference "ZIPFoundation" */;
+			productName = ZIPFoundation;
+		};
+		EBDD7DB029731FB300C1C4B2 /* StableDiffusion */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EB33A51B2954D89F00B16357 /* XCRemoteSwiftPackageReference "ml-stable-diffusion" */;
+			productName = StableDiffusion;
+		};
+		F155203B297118E700DC009B /* CompactSlider */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F155203A297118E600DC009B /* XCRemoteSwiftPackageReference "CompactSlider" */;
+			productName = CompactSlider;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = EBE755BD293E37DD00806B32 /* Project object */;
+}
