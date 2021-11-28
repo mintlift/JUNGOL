@@ -1,3 +1,5 @@
 {
   "pins" : [
-   
+    {
+      "identity" : "compactslider",
+      "kind" : "remoteSour
