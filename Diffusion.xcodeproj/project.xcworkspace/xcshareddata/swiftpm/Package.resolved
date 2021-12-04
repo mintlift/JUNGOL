@@ -4,4 +4,6 @@
       "identity" : "compactslider",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/buh/CompactSlider.git",
-    
+      "state" : {
+        "branch" : "main",
+        "revision" : 
