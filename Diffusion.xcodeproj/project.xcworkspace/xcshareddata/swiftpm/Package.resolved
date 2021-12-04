@@ -2,4 +2,6 @@
   "pins" : [
     {
       "identity" : "compactslider",
-      "kind" : "remoteSour
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/buh/CompactSlider.git",
+    
