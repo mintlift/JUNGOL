@@ -11,4 +11,5 @@
     },
     {
       "identity" : "ml-stable-diffusion",
-      "kind" : "remoteSourceContro
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/apple/ml-stab
