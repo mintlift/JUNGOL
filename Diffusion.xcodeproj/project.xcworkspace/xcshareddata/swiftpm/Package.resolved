@@ -15,4 +15,7 @@
       "location" : "https://github.com/apple/ml-stable-diffusion",
       "state" : {
         "branch" : "main",
-        "revisio
+        "revision" : "fb1fa01c9d30e9b2e02a8b7ed35d905e272a0262"
+      }
+    },
+   
