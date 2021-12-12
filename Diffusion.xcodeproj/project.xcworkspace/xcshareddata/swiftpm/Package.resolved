@@ -20,4 +20,6 @@
     },
     {
       "identity" : "path.swift",
-      "kind" : "remoteSourceControl
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/mxcl/Path.swift.git",
+      "sta
