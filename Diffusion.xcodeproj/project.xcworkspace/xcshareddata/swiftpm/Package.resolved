@@ -22,4 +22,5 @@
       "identity" : "path.swift",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/mxcl/Path.swift.git",
-      "sta
+      "state" : {
+        "revision" : "9c6f807b0a76be0e27aecc908bc6f17340
