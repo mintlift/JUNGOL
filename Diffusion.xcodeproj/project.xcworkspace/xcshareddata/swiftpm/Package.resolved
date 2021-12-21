@@ -29,4 +29,5 @@
     },
     {
       "identity" : "swift-argument-parser",
-      "kind" : "
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/apple/swift-argument-pa
