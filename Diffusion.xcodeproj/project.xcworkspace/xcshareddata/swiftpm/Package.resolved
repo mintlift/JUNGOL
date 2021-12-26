@@ -39,4 +39,6 @@
     {
       "identity" : "zipfoundation",
       "kind" : "remoteSourceControl",
-      "
+      "location" : "https://github.com/weichsel/ZIPFoundation.git",
+      "state" : {
+     
