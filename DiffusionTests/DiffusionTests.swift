@@ -1,3 +1,6 @@
 //
 //  DiffusionTests.swift
-//  Diffusion
+//  DiffusionTests
+//
+//  Created by Pedro Cuenca on December 2022.
+//  See LICE
