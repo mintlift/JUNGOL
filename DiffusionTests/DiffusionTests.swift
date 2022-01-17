@@ -8,4 +8,7 @@
 
 import XCTest
 
-final class DiffusionTests
+final class DiffusionTests: XCTestCase {
+
+    override func setUpWithError() throws {
+     
