@@ -14,4 +14,5 @@ final class DiffusionTests: XCTestCase {
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
 
-    override func tearDownW
+    override func tearDownWithError() throws {
+        // Put teardown code here. This method is cal
