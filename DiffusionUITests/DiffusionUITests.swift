@@ -6,4 +6,8 @@
 //  See LICENSE at https://github.com/huggingface/swift-coreml-diffusers/LICENSE
 //
 
-import XC
+import XCTest
+
+final class DiffusionUITests: XCTestCase {
+
+    override func setUpWithE
