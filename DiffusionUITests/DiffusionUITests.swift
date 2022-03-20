@@ -10,4 +10,5 @@ import XCTest
 
 final class DiffusionUITests: XCTestCase {
 
-    override func setUpWithE
+    override func setUpWithError() throws {
+        // Put setup code here. This method is called be
