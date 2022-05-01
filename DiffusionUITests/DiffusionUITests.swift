@@ -24,4 +24,8 @@ final class DiffusionUITests: XCTestCase {
     }
 
     func testExample() throws {
-        // UI tests must launch the application that
+        // UI tests must launch the application that they test.
+        let app = XCUIApplication()
+        app.launch()
+
+   
