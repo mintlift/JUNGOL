@@ -5,4 +5,4 @@ This is a native app that shows how to integrate Apple's [Core ML Stable Diffusi
 This is what the app looks like on macOS:
 ![App Screenshot](screenshot.jpg)
 
-On first launch, the application downloads a zipped archive with a Core ML version of Stabili
+On first launch, the application downloads a zipped archive with a Core ML version of Stability AI's Stable Diffusion v2 base, from [this location in the Hugging F
