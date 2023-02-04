@@ -5,4 +5,6 @@ This is a native app that shows how to integrate Apple's [Core ML Stable Diffusi
 This is what the app looks like on macOS:
 ![App Screenshot](screenshot.jpg)
 
-On first launch, the application downloads a zipped archive with a Core ML version of Stability AI's Stable Diffusion v2 base, from [this location in the Hugging Face Hub](https://huggingface.co/pcuenq/coreml-stable-diffusion-2-base/tree/main). This process takes a while, as several GB of data have to be d
+On first launch, the application downloads a zipped archive with a Core ML version of Stability AI's Stable Diffusion v2 base, from [this location in the Hugging Face Hub](https://huggingface.co/pcuenq/coreml-stable-diffusion-2-base/tree/main). This process takes a while, as several GB of data have to be downloaded and unarchived.
+
+For faster inference, we use a very fast scheduler
