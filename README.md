@@ -9,4 +9,7 @@ On first launch, the application downloads a zipped archive with a Core ML versi
 
 For faster inference, we use a very fast scheduler: [DPM-Solver++](https://github.com/LuChengTHU/dpm-solver), that we ported to Swift from our [diffusers DPMSolverMultistepScheduler implementation](https://github.com/huggingface/diffusers/blob/main/src/diffusers/schedulers/scheduling_dpmsolver_multistep.py).
 
-## Compatibility
+## Compatibility and Performance
+
+- macOS Ventura 13.1, iOS/iPadOS 16.2, Xcode 14.2.
+- P
