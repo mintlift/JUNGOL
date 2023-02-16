@@ -13,4 +13,4 @@ For faster inference, we use a very fast scheduler: [DPM-Solver++](https://githu
 
 - macOS Ventura 13.1, iOS/iPadOS 16.2, Xcode 14.2.
 - Performance (after the initial generation, which is slower)
-  * ~8s i
+  * ~8s in macOS on MacBook Pro M1 Max (64 GB). Model: Stable Dif
