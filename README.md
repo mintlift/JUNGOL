@@ -14,4 +14,6 @@ For faster inference, we use a very fast scheduler: [DPM-Solver++](https://githu
 - macOS Ventura 13.1, iOS/iPadOS 16.2, Xcode 14.2.
 - Performance (after the initial generation, which is slower)
   * ~8s in macOS on MacBook Pro M1 Max (64 GB). Model: Stable Diffusion v2-base, ORIGINAL attention implementation, running on CPU + GPU.
-  * 23 ~ 30s on iPhone 13 Pro. Model: Stable Diffusion v2-base, SPLIT_
+  * 23 ~ 30s on iPhone 13 Pro. Model: Stable Diffusion v2-base, SPLIT_EINSUM attention, CPU + Neural Engine, memory reduction enabled.
+
+Se
