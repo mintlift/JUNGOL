@@ -16,4 +16,4 @@ For faster inference, we use a very fast scheduler: [DPM-Solver++](https://githu
   * ~8s in macOS on MacBook Pro M1 Max (64 GB). Model: Stable Diffusion v2-base, ORIGINAL attention implementation, running on CPU + GPU.
   * 23 ~ 30s on iPhone 13 Pro. Model: Stable Diffusion v2-base, SPLIT_EINSUM attention, CPU + Neural Engine, memory reduction enabled.
 
-See [this post](https://huggingface.co/blog/fast-mac-diffusers) and [th
+See [this post](https://huggingface.co/blog/fast-mac-diffusers) and [this issue](https://github.com/huggingface/swift-coreml-diffu
