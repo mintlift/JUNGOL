@@ -18,4 +18,4 @@ For faster inference, we use a very fast scheduler: [DPM-Solver++](https://githu
 
 See [this post](https://huggingface.co/blog/fast-mac-diffusers) and [this issue](https://github.com/huggingface/swift-coreml-diffusers/issues/31) for additional performance figures.
 
-The application w
+The application will try to guess the best hardware to run models on. You can overri
