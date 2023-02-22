@@ -22,4 +22,4 @@ The application will try to guess the best hardware to run models on. You can ov
 
 ## How to Run
 
-The easiest way to test the ap
+The easiest way to test the app on macOS is by [downloading it from the Mac App Store](htt
