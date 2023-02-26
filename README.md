@@ -26,4 +26,4 @@ The easiest way to test the app on macOS is by [downloading it from the Mac App 
 
 ## How to Build
 
-You need [Xcode](https://developer.apple.com/xcode/) to build the app. When you clone the repo, please update `common.xcconfig` with your dev
+You need [Xcode](https://developer.apple.com/xcode/) to build the app. When you clone the repo, please update `common.xcconfig` with your development team identifier. Code signing is required to run on iOS, but 
