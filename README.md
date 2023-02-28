@@ -30,4 +30,4 @@ You need [Xcode](https://developer.apple.com/xcode/) to build the app. When you 
 
 ## Known Issues
 
-Perfor
+Performance on iPhone is somewhat erratic, sometimes it's ~20x slower and the 
