@@ -30,4 +30,4 @@ You need [Xcode](https://developer.apple.com/xcode/) to build the app. When you 
 
 ## Known Issues
 
-Performance on iPhone is somewhat erratic, sometimes it's ~20x slower and the 
+Performance on iPhone is somewhat erratic, sometimes it's ~20x slower and the phone heats up. This happens because the model could not
