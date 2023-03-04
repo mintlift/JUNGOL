@@ -33,4 +33,9 @@ You need [Xcode](https://developer.apple.com/xcode/) to build the app. When you 
 Performance on iPhone is somewhat erratic, sometimes it's ~20x slower and the phone heats up. This happens because the model could not be scheduled to run on the Neural Engine and everything happens in the CPU. We have not been able to determine the reasons for this problem. If you observe the same, here are some recommendations:
 - Detach from Xcode
 - Kill apps you are not using.
-- Let the iPhone cool down before repeatin
+- Let the iPhone cool down before repeating the test.
+- Reboot your device.
+
+## Next Steps
+
+- Allow addi
