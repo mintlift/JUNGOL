@@ -38,4 +38,4 @@ Performance on iPhone is somewhat erratic, sometimes it's ~20x slower and the ph
 
 ## Next Steps
 
-- Allow addi
+- Allow additional models to be downloaded from the Hub.
